@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #test{
+            width: 300px;
+            height: 200px;
+            background-color: rgb(39, 77, 77);
+            border: '1px' solid #000;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <h1> Dom Append Child Methods</h1>
+        <img src="Screenshot_1.jpg" alt="">
+        <br>
+        <br>
+        <h2>JavaScript insertAdjacentElement & insertAdjacentHTML Tutorial</h2>
+        <ol>
+            <li> insertAdjacentElement(" "," ")</li>
+            <li> insertAdjacentHTML(" ", " ") </li>
+            <li> insertAdjacentText(" ", " ") </li>
+        </ol>
+
+
+        <h2>Dom insertAdjacent Positions: </h2>
+            <img src="Screenshot_2.jpg" alt="">
+            <ol>
+                <li>beforebegin</li>
+                <li>beforeend</li>
+                <li>afterbegin</li>
+                <li>afterend</li>
+            </ol> -->
+
+
+
+
+
+
+
+
+        <h3>Example</h3>
+            <div id="test">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+                <!-- <h3>outer</h3>
+                <div id="inner">
+                    <h3>inner</h3>
+                    <div id="a">A</div>
+                    <div id="b">B</div>
+                    <div id="c">C</div>
+                </div> -->
+
+
+
+
+
+
+
+                        <!-- This is Old Way to insert -->
+
+                    <!-- insertAdjacentElement  -->
+
+        <!-- <script>
+            
+            var newElement = document.createElement("h2");
+            var newText = document.createTextNode("This is just a text");
+            newElement.appendChild(newText);
+
+
+            var target = document.getElementById("test"); 
+            
+            target.insertAdjacentElement("beforebegin",newElement );
+            target.insertAdjacentElement("afterbegin",newElement );
+
+        </script> -->
+
+
+
+
+
+
+
+
+
+                    <!-- insertAdjacentHtml  -->
+
+        <!-- <script>
+            
+            var newElement = "<h2> This is text</h2> ";
+            
+            
+            var target = document.getElementById("test"); 
+
+
+            target.insertAdjacentHTML("beforebegin",newElement);
+            target.insertAdjacentHTML("beforeend",newElement );
+            target.insertAdjacentHTML("afterbegin",newElement );
+            target.insertAdjacentHTML("afterend",newElement );
+
+        </script> -->
+
+
+
+
+
+
+
+
+                    <!-- insertAdjacentText  -->
+        <script>
+            
+            var newText = "This is text";
+            
+            
+            var target = document.getElementById("test"); 
+
+
+            // target.insertAdjacentText("beforebegin",newText);
+            // target.insertAdjacentText("beforeend",  newText );
+            // target.insertAdjacentText("afterbegin", newText );
+            target.insertAdjacentText("afterend",   newText );
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

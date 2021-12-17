@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #test{
+            background-color: red;
+            width: 400px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+        <h1>JavaScript setInterval() & clearInterval() Tutorial</h1>
+
+            <h2>
+                In this tutorial you will learn javascript setInterval , clearInterval methods.You can
+                learn call a function after a specific interval of time with javascript setInterval methods.We can also
+                animate with javascript with this setInterval function.
+            </h2>
+            
+            <br>
+
+            <big>
+                <b>
+            <pre>
+                setInterval(functionName, millisecond)
+            </pre>
+                </b>
+            </big>
+            <br>
+            <br>
+
+
+
+
+
+            <h3>Example</h3>
+                <div class="" id="test"></div>
+
+
+
+
+
+                            <!-- setInterval() method  -->
+            <!-- <script>
+                var a = 0;
+                setInterval(anim, 100);
+                    
+                function anim(){
+                    a = a + 10;
+                    // console.log('a')
+
+                    var target = document.getElementById('test');
+
+                    target.style.marginLeft = a + "px"; 
+
+                }
+            </script> -->
+
+
+
+
+
+
+
+
+
+                            <!-- clearInterval() method  -->
+            <script>
+                var a = 0;
+                var id = setInterval(anim, 100);
+                    
+                function anim(){
+
+                    a = a + 10;
+
+                    if (a == 200) {
+                        clearInterval(id);
+                    }else{
+                    var target = document.getElementById('test');
+                    target.style.width = a + "px"; 
+                    }
+                }
+            </script>
+
+
+
+
+
+
+
+
+</body>
+</html>

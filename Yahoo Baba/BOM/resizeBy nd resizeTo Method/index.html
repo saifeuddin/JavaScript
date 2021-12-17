@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <h1>JavaScript Window resize(x,y) & resize(x,y) Tutorial</h1>
+            <p>
+               In this tutorial you will learn javascript resizeTo , resizeBy method tutorial. You can
+               learn how to resize a browser window with javascript resizeTo method in hindi.
+
+            </p>
+            <b> resizeTo(x,y) & resizeBy(x,y) will not work in other site it will work in your own site </b>
+            <br>
+            <ol>
+                <li>window.resizeTo 
+                    <p>Works like Position Absolute</p>
+                </li>
+                <li>window.resizeBy
+                    <p>Works like Position Relative</p>
+                </li>
+            </ol>
+
+            <button onclick="openW()">Open Window </button>
+            <button onclick="closeW()">Close Window </button>
+            <button onclick="moveW() ">Move window</button>
+            <button onclick="resizeW() ">Resize window</button>
+
+
+
+            <script>    
+                var myW;
+
+
+                function openW(){
+                    myW = window.open("","_blank","width=700px,height=300p,left=300px")
+                    myW.document.write("<P> This is MyWindow</p>")
+                }
+                
+                function closeW(){
+                    myW.window.close();
+                }
+
+
+                function moveW(){
+                    // myW.moveTo(100,100);
+                    myW.moveBy(100,100);
+                    myW.focus();
+                }
+
+
+                function resizeW(){
+                    // myW.resizeTo(400,400);
+                    myW.resizeBy(400,400);
+                    myW.focus();
+                }
+
+
+            </script>
+
+
+
+</body>
+</html>

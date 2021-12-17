@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        
+    <h1>JavaScript DOM Append(insert) Methods</h1>
+        <img src="Screenshot_2.jpg" alt="">
+        <h2>
+            JavaScript appendChild & insertBefore Tutorial
+        </h2>
+            <ol>
+                <li>appendChild 
+                    <p>last a add hbe </p>
+                </li>
+                <li>insertBefore 
+                    <p>First a add hbe </p>
+                </li>
+            </ol>
+            <p>
+                ata created element or text html a insert korte use hoi. 
+            </p>
+            <h3>Example</h3>
+                <div id="test" style="height: 200px; width: 400px; background-color: blueviolet; margin: auto;">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, voluptatum similique. Molestiae laudantium explicabo aspernatur, eveniet iure neque animi, mollitia alias ut quos officiis culpa totam necessitatibus dolor numquam quo?
+                    </p>
+                </div>
+
+        
+
+
+                        <!-- appendChild -->
+        <!-- <script>
+                    //Create an Element
+            var element = document.createElement("p");
+                    console.log(element);
+                    
+                    
+                    
+                    //Create an Text
+            var text = document.createTextNode("This is created text");
+            console.log(text);
+
+
+                    //Create an Comment
+            var cmt = document.createComment("this is a created comment");
+            console.log(cmt);
+
+
+
+
+
+
+
+
+
+                    // Insert created text in created element
+            element.appendChild(text);
+                    
+                    
+
+                    // Insert created text & element  in an Already Existing element 
+                    // It will always add element or text at last 
+            document.getElementById("test").appendChild(element);
+
+
+                    // You can also style this 
+            document.getElementById("test").appendChild(element).style.color = "white";
+
+
+
+                    // append Comment 
+            document.getElementById("test").appendChild(cmt);
+        
+
+            
+        </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- insertBefore -->
+        <script>
+                    //Create an Element
+            var element = document.createElement("p");
+                    console.log(element);
+                    
+                    
+                    
+                    //Create an Text
+            var text = document.createTextNode("This is created text");
+            console.log(text);
+
+
+                    //Create an Comment
+            // var cmt = document.createComment("this is a created comment");
+            // console.log(cmt);
+
+
+
+
+
+
+
+
+
+                    // Insert created text in created element
+            element.appendChild(text);
+                    
+                    // insertBefore insert element at first    
+            var before = document.getElementById("test");
+
+            before.insertBefore(element, before.childNodes[1]).style.color = "white";
+
+
+        </script>
+
+
+
+
+
+
+    
+</body>
+</html>

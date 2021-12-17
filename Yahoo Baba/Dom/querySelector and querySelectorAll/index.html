@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+        <!-- <h1>
+            JavaScript DOM querySelector & querySelectorAl
+        </h1>
+            <br>
+            <br>
+
+            <h2>New Dom Targeting Method</h2>
+                <img src="Screenshot_2.jpg" alt="">
+
+            <br>
+            <br>
+            <br>
+            <br> -->
+            
+
+
+
+            <h2> Dom  querySelector() Method </h2> 
+            
+                <h3>Example </h3>   
+                    <div id="header" class="abc">
+                        <h1>saife</h1>
+                        <h1>uddin</h1>
+                    </div>
+                    <div id="nav" class="abc"> 
+                        <b>I am a student</b> 
+                    </div>
+                    <div class="main"></div>
+                    <div class="content"></div>
+                    <div id="footer" class="abc"></div>
+
+
+
+                    <!-- <script>
+                        var a ;
+                        a = document.querySelector("#header").innerHTML= "<h1> wow <h1>";
+                        console.log(a);
+                            
+
+
+
+
+
+                        a = document.querySelector("#header").getAttribute("class");
+                        console.log(a);
+                    </script> -->
+                    
+                    
+                    <br>
+                    <br>
+                    <br>
+
+
+                    <script>
+                        var a ;
+
+                        a = document.querySelectorAll(".abc");
+                        console.log(a);
+
+                        
+
+
+
+                        // a = document.querySelectorAll(".abc");
+                        // console.log(a);
+
+                        // a = document.querySelectorAll(".abc")[1];
+                        // console.log(a);
+
+                        // a = document.querySelectorAll(".abc")[1].innerHTML;
+                        // a = document.querySelectorAll(".abc")[1].innerText;
+                        // console.log(a);
+
+
+
+
+
+
+
+
+
+
+                        a = document.querySelectorAll("#header h1")[1].innerText;
+                        console.log(a);
+
+
+
+
+                        a = document.querySelectorAll("#header h1")[1];
+                        console.log(a);
+                    </script>
+
+
+
+
+
+</body>
+</html>

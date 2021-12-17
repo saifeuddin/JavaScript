@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1>JavaScript Array Methods</h1>   
+            <br>
+            <br>
+            <br>
+            <h2> How to Create a Array Method </h2>
+                <p> Ami variable create korar sthy sthy value assign na kore, Porobostite arry values  assign korar jnnu jekono variable ke array banate parbo nicher code er maddhomy. </p>
+                <pre>
+                    var a = new Array();
+                </pre>
+                <br>
+                <br>
+                <br>
+
+                <h2>Create a Array with new Array() Method </h2>
+                <script>
+                        // Add Unlimited Values 
+                    var arr = new Array();
+                        arr[0] = 10;
+                        arr[1] = " ";
+                        arr[3] = "saife";
+                        arr[4] = null;
+
+                    document.write("<ul>");
+                    for( var a = 0; a <= 4; a++ ){
+                        document.write("<li> " + arr[a] + "</li>");
+                        }
+                    document.write("<ul>");
+                </script>
+                <br>
+                <br>
+                <br>
+                <br>
+
+
+                <h3> 
+                    Add three values only 
+                </h3>
+                <script>    
+                                // Add three values only 
+                        var arr = new Array(3);
+                        arr[0] = 10;
+                        arr[1] = " ";
+                        arr[3] = "saife";
+                        arr[4] = null;
+
+                        document.write("<ul>");
+                            for( var a = 0; a <= 3; a++ ){ document.write("<li> " + arr[a] + "</li>");
+                                }
+                        document.write("<ul>");
+                </script>
+                <br>
+                <br>
+                <br>
+
+            
+            <h2> Get Array Values From Users with Loop</h2>
+            <script>
+                    // Add three values only 
+                    var arr = new Array(3);
+                    for(g = 0; g <= 3; g++){
+                        arr[g] = prompt("Enter the Value : ")
+                    }               
+
+                    document.write("<ul>");
+                    for (var a = 0; a <= 3; a++) {
+                        document.write("<li> " + arr[a] + "</li>");
+                    }
+                    document.write("<ul>");
+            </script>
+
+
+
+
+
+    
+</body>
+</html>

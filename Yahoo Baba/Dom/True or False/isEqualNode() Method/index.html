@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <!-- <h1>JavaScript isEqualNode() Tutorial</h1>
+            <img src="Screenshot_3.jpg" alt="">
+            <img src="Screenshot_1.jpg" alt="">
+            <h2>
+                In this tutorial you will learn javascript isEqualNode method.You can learn how to
+                compare two html tags or nodes in javascript with isEqualNode method.
+            </h2>
+            <h2>Conditions </h2>
+            <ol>
+                <li>Same Node Type </li>
+                <li>Same nodeName </li>
+                <li>Same Node value </li>
+                <li>Same childNodes </li>
+                <li>Same attributes </li>
+                <li>Same attributes values </li>
+            </ol> -->
+
+            <h3>Example</h3>
+                <ul id="a">
+
+                    <li>Orange</li>
+                    <li>Banana</li>
+                    <li>grapes</li>
+                    <li>Apple</li>
+
+                </ul>
+                <ul id="b">
+                    
+                    <li>Guava</li>
+                    <li>Orange</li>
+                    <li>Pineapple</li>
+
+                </ul>
+
+
+
+                <script>
+                    var target1 = document.getElementById("a").firstElementChild;
+                    console.log(a);
+
+
+
+
+                    var target2 = document.getElementById("b").firstElementChild;
+                    var target2 = document.getElementById("b").children[1];
+                    console.log(b);
+                    
+                    
+                    var equal = target1.isEqualNode(target2);
+                    console.log(equal);
+
+                    
+                </script>
+
+
+
+
+</body>
+</html>

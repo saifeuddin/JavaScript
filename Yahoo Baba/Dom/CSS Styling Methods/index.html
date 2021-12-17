@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .abc{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+
+
+        <h1>JavaScript DOM CSS Styling Methods Tutorial </h1>
+            <br>
+            <br>
+            <br>
+            <h2>All DOM Css Styling Methods</h2>
+                <img src="Screenshot_1.jpg" alt="">
+                <ol>
+                    <li>Style</li>
+                    <li>className</li>
+                    <li>classList</li>
+                </ol>
+                <br>
+                <br>
+                <br>
+
+
+
+            <h3>Example</h3>
+            <div class="div">
+                <div id="header" style="color: red;; border: 1px solid;" onclick="xyz()">
+                    <h1>Saife</h1>
+                    <h1>Saife</h1>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+
+
+
+
+
+
+
+
+
+
+                        <!-- style Method  -->
+            <!-- <script>
+                var a;
+                    // Get the color style
+                document.querySelector("#header").style.color;
+                    //Nothing 
+                document.querySelector("#header").style.border;
+
+
+                    // Set Background Color
+                document.querySelector("#header").style.backgroundColor = "yellow";
+
+                console.log(a);
+            </script> -->
+
+
+
+
+
+
+
+
+
+                        <!-- className Method  -->
+            <!-- <script>
+                var a;
+
+
+                    // Set the class Name
+                document.querySelector("#header").className = "abc";
+                document.querySelector("#header").className = "abc xyx";
+                
+
+
+                a = document.querySelector("#header").className;
+
+
+                console.log(a);
+            </script> -->
+
+
+
+
+
+
+
+
+
+
+                        <!-- classList Method  -->
+            <!-- <script>
+                var a;
+
+
+                    // Add  class Name
+                document.querySelector("#header").classList = "abc";
+                    // Add multiple Class Name
+                document.querySelector("#header").classList = "abc xyx";
+
+
+                a = document.querySelector("#header").classList;
+
+
+                console.log(a);
+            </script> -->
+            <script>
+                var a;
+
+
+                    // Add class Name
+                document.querySelector("#header").classList.add("sss","zzz");
+
+                    // Remove Class Name
+                document.querySelector("#header").classList.remove("zzz");
+
+
+
+                    // Print all Class Names
+                a = document.querySelector("#header").classList;
+
+                console.log(a);
+            </script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

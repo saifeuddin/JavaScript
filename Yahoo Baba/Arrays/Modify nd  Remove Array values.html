@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+            <h1>
+                JavaScript Modify & Delete Array Elements Tutorial
+            </h1>
+            <h2>Modify an Array Element</h2>
+                <pre>
+                    arrayName[index] ="New Value";
+                </pre>
+                <h3>Example</h3>
+                <script>
+                    var a = ["harry", 20, "red", true];
+
+                        document.write(a);
+                        document.write("<br>");
+                        document.write("<br>");
+
+                        document.write(a[0]);
+                        document.write(a[1]);
+                        document.write(a[2]);
+                        document.write(a[3]);
+
+                        document.write("<br>");
+                        document.write("<br>");
+                        a[0] = "saif";
+                        document.write(a[0]);
+                        document.write("<br>");
+                        document.write("<br>");
+                        
+                        document.write(a);
+                        document.write("<br>");
+                    
+                </script>
+
+
+
+                <br>
+                <br>
+                <br>
+
+
+                <h2>Remove/Delete  an Array Element</h2>
+                    <pre>
+                        delete arrayName[index];
+                    </pre> 
+                <script>
+                    var a = ["harry", 20, "red", true];
+
+                        document.write(a);
+                        document.write("<br>");
+                        document.write("<br>");
+                        
+                    delete a[1];
+                        document.write(a);
+                        document.write("<br>");
+                        document.write("<br>");
+
+                        document.write(a[1] + "<br>");
+                </script>
+
+
+
+
+</body>
+</html>

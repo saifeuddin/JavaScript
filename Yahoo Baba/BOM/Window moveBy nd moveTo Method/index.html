@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <h1>JavaScript Window moveBy(x,y) & moveTo(x,y) Tutorial</h1>
+            <p>
+               In this tutorial you will learn javascript window moveTo , moveBy.You can
+               learn how to move a browser window in javascript with moveTo method and moveBy method.
+            </p>
+            <b> moveTo(x,y) & moveBy(x,y) will not work in other site it will work in your own site </b>
+            <br>
+            <ol>
+                <li>window.moveTo 
+                    <p>Works like Position Absolute</p>
+                </li>
+                <li>window.moveBy 
+                    <p>Works like Position Relative</p>
+                </li>
+            </ol>
+
+            <button onclick="openW()">Open Window </button>
+            <button onclick="moveW() ">Move window</button>
+            <button onclick="closeW()">Close Window </button>
+
+
+
+            <script>    
+                var myW;
+
+
+                function openW(){
+                    myW = window.open("","_blank","width=700px,height=300p,left=300px")
+                    myW.document.write("<P> This is MyWindow</p>")
+                }
+                
+                function closeW(){
+                    myW.window.close();
+                }
+
+
+                function moveW(){
+                    // myW.moveTo(100,100);
+                    myW.moveBy(100,100);
+                    myW.focus();
+                }
+
+            </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <h1>JavaScript Window Open() & Close() Method Tutorial</h1>
+            <p>
+                In this tutorial you will learn javascript window open and close methods tutorial in Hindi, Urdu.You can
+                learn how to open a new window in javascript with open method and how to close a window with javascript
+                close method in hindi.
+            </p>
+            <pre>
+                window.open(URL,name, specs) 
+            </pre>
+            <img src="Screenshot_1.jpg" alt="">
+
+
+            <button onclick="openW()">Open Window </button>
+            <button onclick="closeW()">Close Window </button>
+
+
+
+            <script>    
+                var myW;
+
+
+                function openW(){
+                    myW = window.open("https://www.w3schools.com","_blank","width=700px,height=300px,left=500px,top=500px")
+                }
+                
+                function closeW(){
+                    myW.window.close();
+                }
+
+
+            </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1>JavaScript DOM contains() Method </h1>
+        <pre>
+            contains()
+        </pre>
+        <h2>it will return true or false </h2>
+
+
+
+
+
+
+        <br>
+        <br>
+        <br>
+
+        
+        <h3>Example</h3>
+        <div id="test">
+            <h2> HHHHHHHHHHH   </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quasi nostrum dolor magni at consectetur ipsum, </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quasi </p>
+        </div>
+
+        <script>
+            var parentElement = document.getElementById("test");
+            var target = document.getElementById("abc");
+
+
+
+            var find = parentElement.contains(target);
+            console.log(find);
+
+        </script>
+
+
+
+
+
+
+
+        <div id="test1">
+            <h2 id="abc"> HHHHHHHHHHH   </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quasi nostrum dolor magni at consectetur ipsum, </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quasi </p>
+        </div>
+
+        <script>
+            var parentElement = document.getElementById("test1");
+            var target = document.getElementById("abc");
+
+
+            var find = parentElement.contains(target);
+            console.log(find);
+
+        </script>
+
+
+</body>
+</html>

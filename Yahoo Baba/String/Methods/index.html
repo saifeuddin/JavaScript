@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 80%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    
+        <h1>JavaScript String Methods</h1>
+
+        <h2> All String Methods </h2>
+           <!-- <img src="Screenshot_2.jpg" alt="">
+            <br>
+            <br>
+            <br>
+
+         <h2>length Method</h2>
+            <script>
+                var lnth = "hhhhhhhhhhhhhhhhhhhh";
+
+                document.write(lnth.length);
+            </script>
+            <br>
+            <br>
+            <br>
+
+        <h2>toUpperCase() Method</h2>
+        <h2>toLowerCase() Method</h2>
+        <script>
+            var lo = "sAiFe";
+
+            document.write(lo +"<br>");
+            document.write(lo.toLowerCase() +"<br>");
+            document.write(lo.toUpperCase());
+        </script>
+        <br>
+        <br>
+        <br>
+
+        <h2>includes() Method</h2>
+            <script>
+                var incl = "saife uddin is a web designer";
+
+                document.write(incl.includes("is") +"<br>");
+                document.write(incl.includes("red"));
+            </script>
+        <br>
+        <br>
+        <br> 
+
+        <h2>startsWith() Method </h2>
+        <h2>endsWith() Method </h2>
+            <script>
+                var a = "Agriculture Training Institute";
+
+                var b = a.startsWith("Agri");
+                document.write(b +"<br>");
+                var c = a.endsWith("tute");
+                document.write(c);
+            </script>
+        <br>
+        <br>
+        <br>
+
+        <h2>search() Method</h2>
+            <b>It give the index.</b>
+            <br>
+            <script>
+                var str = "My name is Is saife";
+
+                document.write(str.search("is"));
+                document.write("<br>");
+                document.write(str.search("Is"));
+                document.write("<br>");
+
+                document.write("Jodi Na mile Tahole ata return Korbe: <br>");
+                document.write(str.search("IS"));
+            </script>
+        <br>
+        <br>
+        <br>
+
+        <h2>match() Method</h2>
+            <b> Ata o search er motu kaj kore but ata word gula collect kore akta array return kore. </b>
+            <br>
+            <br>
+            <script>
+                var mtch = "I My is love My country. This is Bangladesh";
+
+                document.write(mtch.match(/My/g));
+            </script>
+        <br>
+        <br>
+        <br>
+
+        <h2>indexOf() Method</h2>
+        <h2>lastIndexOf() Method</h2>
+            <script>
+                var inx = "JavaScript Is aa Scripting Language";
+                var a = inx.indexOf("a");
+                var a = inx.indexOf("aa");
+
+                var b = inx.lastIndexOf("g");
+
+                document.write(a);
+                document.write("<br>");
+                document.write(b);
+                document.write("<br>");
+            </script>
+        <br>
+        <br>
+        <br>
+
+        <h2>replace() Method</h2>
+            <script>
+                var a = "JavaScript is a is Scripting Language ";
+
+                document.write(a.replace("JavaScript", "PHP") +"<br>");
+                document.write(a.replace(/is/g, "are"));
+            </script>
+        <br>
+        <br>
+        <br>
+
+        <h2>trim() Method </h2>
+            <b>This method removes extra space</b>
+            <script>
+                var a = "         Java ";
+                // alert(a);
+                // alert(a.trim());
+            </script>
+        <br>
+        <br>
+        <br>
+
+        <h2>charAt() Method</h2>
+            <b></b>
+            <script>
+                var a = "javascript is fastest language";
+
+                document.write(a.charAt(0));
+                document.write(a.charAt(1));
+                    // Nothing will return
+                document.write(a.charAt(111));
+
+            </script>
+        <br>
+        <br>
+        <br> 
+
+        <h2>charCodeAt() Method</h2>
+            <b>jdi string er index dei tahole sky code return korbe</b>
+            <img src="Screenshot_1.jpg" alt="">
+            <script>
+                var a = "javascript is fastest language";
+
+                document.write("<br>");
+                document.write("<br>");
+                document.write("<br>");
+                
+                document.write(a.charCodeAt(7));
+                document.write("--" + a.match("i"));
+                document.write("<br>");
+                document.write(a.charCodeAt(1));
+                document.write("--" + a.match("a"));
+                document.write("<br>");
+                document.write(a.charCodeAt(2));
+                document.write("--" + a.match("v"));
+            </script>
+        <br>
+        <br>
+        <br>
+
+        <h2>formCharCode() Method</h2>
+            <b>
+                Sky code dile character return korbe 
+            </b>
+            <br>
+            <br>
+            <script>
+                var a = String.fromCharCode(110);
+                document.write("Keyboard character is: " + a);
+
+            </script>
+        <br>
+        <h2>concat() Method</h2>
+            <script>
+                var a = "javascript";
+                var b = "Php";
+
+                var c = a.concat(b);
+                var d = b.concat(a);
+                document.write(c);
+                document.write("<br>");
+                document.write(d);
+            </script>
+        <br>
+        <br>
+        <br> -->
+
+        <h2>split() Method</h2>
+            <b> Ai method ta bibhoktu(divide) krte kaje lge</b>
+            <br>
+            <br>
+            <script>
+                var a = "javascript is fast language";
+                var d = "javascript is a programming language";
+
+                document.write(a.split("ascript"));
+                document.write("<br>");
+                document.write(d.split("prog"));
+            </script>
+        <br>
+        <br>
+        <br>
+
+        <h2>repeat() Method</h2>
+            
+            <script>
+                var a = "javascript is fast language";
+                var d = "javascript is a programming language";
+
+                document.write(a.repeat(4));
+                // document.write("<br>");
+            </script>
+        <br>
+        <br>
+        <br>
+
+        <h2>slice() Method</h2>
+            <script>
+                var a = "javascript is fast language";
+
+                document.write(a);
+
+                document.write("<br>");
+                document.write("<br>");
+
+                document.write(a.slice(11));
+                document.write("<br>");
+                document.write("<br>");
+
+                document.write(a.slice(11, 13));
+                document.write("<br>");
+                document.write("<br>");
+
+                document.write(a.slice(-1));
+                document.write("<br>");
+                document.write("<br>");
+
+                document.write(a.slice(-4));
+            </script>
+        <br>
+        <br>
+        <br>
+
+        <h2>substr() Method</h2>
+        <h2>substr() Method</h2>
+        <b>Same as slice(). New string banai dibe </b>
+        <br>
+        <br>
+        <script>
+            var a  = "i am a Student ";
+            
+            document.write(a.substr(2));
+            document.write("<br>");
+            document.write(a.substr(2,5));
+            document.write("<br>");
+            </script>
+            <br>
+            <b>substring() ends value count krbe na</b>
+            <br>
+            <br>
+            <script>
+                var a  = "i am a Student ";
+
+                document.write(a.substring(2));
+                document.write("<br>");
+                document.write(a.substring(2,5));
+                document.write("<br>");
+            </script>
+        <br>
+        <br>
+        <br>
+
+        <h2>toString() Method</h2>
+            <script>
+                var a = 10000;
+
+                document.write(a.toString() + 30);
+            </script>
+        <br>
+        <br>
+        <br>
+        
+        <h2>valueOf() Method</h2>
+            <script>
+                var a = 10000;
+
+                document.write(a.valueOf());
+            </script>
+</body>
+</html>

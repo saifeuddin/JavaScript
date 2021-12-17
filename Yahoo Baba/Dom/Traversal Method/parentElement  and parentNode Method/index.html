@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en" id="main">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #outer{
+            width: 600px;
+            height: 300px;
+            background-color: blanchedalmond;
+            margin: auto;
+        }
+        #inner{
+            width: 500px;
+            height: 200px;
+            background-color: rgb(95, 65, 21);
+            margin: auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #a, #b, #c, #d{
+            border: 2px solid #000;
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            text-align: center;
+            line-height: 100px;
+            background-color: rgb(238, 236, 236);
+
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Traversal Methods </h1>
+        <p>
+            These Methods are used for targeting Html Elements 
+        </p>
+        <h2>JavaScript All DOM Traversal Methods </h2>
+            <img src="Screenshot_2.jpg" alt="">
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+
+
+
+
+
+
+
+
+        <h2>
+            JavaScript parentElement & parentNode Traversal Method Tutorial
+        </h2>
+            <ol>
+                <li> parentElement 
+                    <p> If there is no parent it will return null </P>
+                    </li>
+                
+                <li> parentNode 
+                    <p> If there is no parent it will return try to return something  </P>
+                </li>
+            </ol>
+        <br>
+        <br>
+        <br> 
+
+        <h3>Example</h3>
+            <div id="outer">
+                <h3>outer</h3>
+                <div id="inner">
+                    <h3> inner </h3>
+                    <div id="a">A</div>
+                    <div id="b">B</div>
+                    <div id="c">C</div>
+                    <div id="d">D</div>
+                </div>
+            </div>
+
+                    <!-- parentElement -->
+            <!-- <script>
+                var a ;
+                a = document.body.parentElement;
+                a = document.getElementById("inner").parentElement;
+                a = document.getElementById("c").parentElement;
+                
+
+
+                    // Returns null 
+                a = document.getElementById("main").parentElement;
+
+                console.log(a);
+            </script> -->
+
+
+
+
+                    <!-- parentNode -->
+            <!-- <script>
+                var a ;
+                a = document.body.parentNode;
+                a = document.getElementById("inner").parentNode;
+
+
+
+                // See this
+                a = document.getElementById("main").parentNode;
+                console.log(a);
+            </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <h2>
+            JavaScript children & childNodes Traversal Method Tutorial
+        </h2>
+        <ol>
+            <li> children
+                <p>
+                    Returns All Children
+                </p>
+            </li>
+
+            <li> childNodes
+                <p>Returns EveryThing Like text with commented</p>
+            </li>
+        </ol>
+
+        <br>
+        <br>
+        <br> 
+
+        <h3>Example</h3>
+        <div id="outer">
+            <h3>outer</h3>
+            <div id="inner">
+                <h3> inner </h3>
+                <div id="a">A</div>
+                <div id="b">B</div>
+                <div id="c">C</div>
+                <div id="d">D</div>
+            </div>
+        </div> -->
+
+
+
+
+
+                    <!-- Children -->
+        <!-- <script>
+
+                var a ;
+                
+                a = document.getElementById("main").children;
+                a = document.body.children;
+                a = document.body.children[6];
+                a = document.getElementById("outer").children;
+                a = document.getElementById("outer").children[1];
+                a = document.getElementById("inner").children[3];
+                a = document.getElementById("c").children;
+                
+
+
+
+                console.log(a);
+
+        </script> -->
+
+
+
+                    <!-- childNodes  -->
+        <!-- <script>
+                var a ;
+                
+                a = document.getElementById("main").childNodes;
+                a = document.body.childNodes;
+                a = document.body.childNodes[6];
+                a = document.getElementById("outer").childNodes;
+                a = document.getElementById("outer").childNodes[1];
+                a = document.getElementById("inner").childNodes;
+                a = document.getElementById("inner").childNodes[3];
+                a = document.getElementById("c").childNodes;
+                
+                
+                
+
+                
+                        // you can change style 
+                a = document.getElementById("inner").childNodes[3].style.background = "red";
+                a = document.getElementById("inner").childNodes[3].innerHTML;
+
+
+                        // you can change style 
+                a = document.getElementById("inner").childNodes[3].innerHTML= "gggggggg";
+                
+
+
+                console.log(a);
+
+            </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h2>
+            JavaScript firstElementChild & lastElementChild, firstChild & lastChild Traversal Method Tutorial
+        </h2>
+        <ol>
+            <li> firstElementChild
+                <p>
+                    It will return the very first element/child
+                </p>
+            </li>
+            <li> lastElementChild
+                <p>
+                    It will return the last element/child
+                </p>
+            </li>
+
+            <li> firstChild
+                <p>
+                    Returns first child of childNodes list. 
+                </p>
+            </li>
+            <li> lastChild
+                <p>
+                    Returns last child of childNodes list .
+                </p>
+            </li>
+        </ol>
+
+        <br>
+        <br>
+        <br>
+
+        <h3>Example</h3>
+        <div id="outer">
+            <h3>outer</h3>
+            <div id="inner"> 
+                <h3> inner </h3>
+                <div id="a">A</div>
+                <div id="b">B</div>
+                <div id="c">C</div>
+                <div id="d">D</div>
+            </div>
+        </div>
+
+
+
+
+                        <!-- firstElementChild -->
+            <script>
+            
+                var a ;
+                
+                a = document.getElementById("inner").firstElementChild;
+
+                a = document.getElementById("outer").firstElementChild;
+                
+
+                            // Style
+                a = document.getElementById("outer").firstElementChild.style.background = "red";
+                a = document.getElementById("outer").firstElementChild;
+
+
+                console.log(a);
+
+        </script>
+
+
+
+
+
+                        <!-- lastElementChild -->
+            <!-- <script>
+
+                var a ;
+                
+                a = document.getElementById("outer").lastElementChild;
+
+                a = document.getElementById("inner").lastElementChild;
+                
+
+
+                        // Style
+                a = document.getElementById("outer").lastElementChild.style.background = "red";
+
+                a = document.getElementById("outer").lastElementChild;
+
+
+                console.log(a);
+
+        </script> -->
+
+
+
+                        <!-- firstChild -->
+                        <!-- lastChild -->
+            <!-- <script>
+
+                var a ;
+                
+                a = document.getElementById("inner").childNodes;
+                console.log(a);
+                
+                a = document.getElementById("inner").firstChild;
+                console.log(a);
+
+                
+
+                a = document.getElementById("inner").lastChild;
+                console.log(a);
+
+        </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <h2>
+            JavaScript nextElementSibling & nextSibling, previousElementSiblings & previousSiblings Traversal
+            Method Tutorial
+        </h2>
+        <ol>
+            <li> nextElementSibling</li>
+            <li> nextSibling</li>
+
+            <li> previousElementSibling</li>
+            <li> previousSibling</li>
+        </ol>
+
+        <br>
+        <br>
+        <br>
+
+        <h3>Example</h3>
+        <div id="outer">
+            <h3>outer</h3>
+            <div id="inner"> 
+                <h3> inner </h3>
+                <div id="a">A</div>
+                <div id="b">B</div>
+                <div id="c">C</div>
+                <div id="d">D</div>
+            </div>
+        </div> -->
+
+
+
+
+                        <!-- nextElementSibling -->
+                        <!-- previousElementSibling -->
+            <!-- <script>
+            
+                var a ;
+                
+                a = document.getElementById("outer").nextElementSibling;
+                a = document.getElementById("outer").previousElementSibling;
+
+
+
+                        // If there is no sibling  to return it will return null 
+                a = document.getElementById("inner").nextElementSibling;
+                a = document.getElementById("inner").previousElementSibling;
+
+
+
+                a = document.getElementById("c").nextElementSibling;
+                a = document.getElementById("c").previousElementSibling;
+
+
+                
+                console.log(a);
+
+        </script> -->
+
+
+
+
+
+                        <!-- nextSiblings -->
+                        <!-- previousSiblings -->
+                <!-- Like childNodes  -->
+            <!-- <script>
+
+                var a ;
+                
+                a = document.getElementById("outer").nextSibling;
+                a = document.getElementById("outer").previousSibling;
+
+
+
+
+                a = document.getElementById("inner").nextSiblings;
+                a = document.getElementById("inner").previousSiblings;
+
+
+
+
+
+
+                a = document.getElementById("c").nextSiblings;
+                a = document.getElementById("c").previousSiblings;
+                
+
+
+
+                console.log(a);
+
+        </script> -->
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

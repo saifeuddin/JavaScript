@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            text-align: center;
+        }
+        #outer
+        {
+            width: 300px;
+            height: 300px;
+            background-color: blueviolet;
+            margin: 70px auto;
+        }
+        #inner
+        {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(132, 111, 151);
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- <h1>JavaScript addEventListener Method Tutorial</h1>
+        <h2> UseCapture In addEventListener() Method</h2>
+            <img src="Screenshot_3.jpg" alt="">
+            <pre>
+                addEventListener('event', function, useCapture(true / false));
+            </pre> -->
+
+            <h3>Example</h3>
+                <div id="outer">
+                    <h4>Outer</h4>
+                    <div id="inner">
+                        <h4>inner</h4>
+                    </div>
+                </div>
+
+
+
+
+                    <!-- Default  -->
+            <!-- <script>
+
+
+                document.querySelector("#inner").addEventListener('click', function(){
+                    alert("You Clicked Inner Div");
+                }, false);
+
+                document.querySelector("#outer").addEventListener('click', function(){
+                    alert("You Clicked outer Div");
+                }, false);
+
+
+            </script> -->
+
+
+
+
+
+                <!-- See the different  -->
+            <script>
+
+
+                document.querySelector("#inner").addEventListener('click', function(){
+                    alert("You clicked Inner Div");
+                }, true  );
+
+                document.querySelector("#outer").addEventListener('click', function(){
+                    alert("You clicked Outer Div");
+                }, true );
+
+
+            </script>
+
+
+
+</body>
+</html>

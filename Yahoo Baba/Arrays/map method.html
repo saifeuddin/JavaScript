@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <h1>avaScript Map Method Tutorial</h1>
+
+
+
+            <h2>Multiplay Array Values with map() Method </h2>
+        <script>
+            var ary = [11, 4, 9, 16];
+
+            var b = ary.map(test);
+            document.write(b + "<br>");
+
+            function test(multiply){
+                return multiply * 10;
+            
+            }
+        </script>
+        <br>
+        <br>
+        <br>
+            <h2>Print objects with map() Method </h2>   
+
+        <script>
+            var ary = [
+                {
+                    fname:"Yahoo" ,
+                lname:"Baba"
+                },
+                {
+                    fname:"Hasan" ,
+                lname:"Mia"
+                },
+                {
+                    fname:"Saife" ,
+                lname:"Uddin"
+                }
+            ];
+
+            var b = ary.map(test);
+            document.write(b + "<br>");
+
+            function test(x){
+                return x.fname +" "+ x.lname;
+            
+            }
+        </script>
+</body>
+</html>

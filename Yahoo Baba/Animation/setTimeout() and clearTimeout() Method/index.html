@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #test{
+            background-color: red;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+        <h1>JavaScript setTimeout() & clearTimeout() Tutorial</h1>
+
+            <h2>
+                In this tutorial you will learn javascript setTimeout , clearTimeout methods.You can
+                learn how to run a function once after specific time with javascript setTimeout function.
+            </h2>
+            
+            <br>
+
+            <big>
+                <b>
+            <pre>
+                setTimeout(functionName, millisecond)
+            </pre>
+                </b>
+            </big>
+            <br>
+            <br>
+
+
+
+
+
+            <h3>Example</h3>
+                <div class="" id="test"></div>
+                <button onclick="stopAnim() ">Stop animation </button>
+
+
+
+
+
+                            <!-- setTimeout() method  -->
+                        <!-- clearInterval() method  -->
+
+            <!-- <script>
+                var id = setTimeout(anim, 3000)
+                    
+                function anim(){
+                    // console.log('a');
+                    var target = document.getElementById('test');
+                        target.style.width = "500px";
+                }
+
+                function stopAnim(){
+                    clearTimeout(id)
+                }
+            </script> -->
+            <script>
+                var id = setTimeout(function(){
+                        var target = document.getElementById('test');
+                            target.style.width = "500px";},3000);
+                    
+                function stopAnim(){
+                    clearTimeout(id)
+                }
+            </script>
+
+
+
+</body>
+</html>

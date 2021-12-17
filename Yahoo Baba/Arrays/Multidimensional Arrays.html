@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+            <h1> JavaScript Multidimensional Arrays Tutorial</h1>
+                <p>
+                    Multidimensional Array is arrays inside an Array. 
+                </p>
+            
+                <script>
+                    var arry = [ 
+                        ["Harry", 18, "Male", "B.com"],
+                        ["Harr", 15, "Male", "B.com"],
+                        ["Hay", 16, "Male", "B.com"],
+                        ["Hry", 18, "Male", "B.com"]
+                    ];
+                    for(var a = 0; a < 4; a++){
+                            document.write(arry[a] + "<br>")
+                    }
+                </script>
+
+                <br>
+                <br>
+
+                <script>
+                    var arry = [ 
+                        ["Harry", 18, "Male", "B.com"],
+                        ["Harry", 15, "Male", "B.com"],
+                        ["Harry", 16, "Male", "B.com"],
+                        ["Harry", 18, "Male", "B.com"]
+                    ];
+                    for(var a = 0; a < 4; a++){
+                        for(var b = 0; b < 4; b++ ){
+                            document.write(arry[a][b] + " ")
+                        }
+                        document.write("<br>")
+                    }
+                </script>
+                
+                <br>
+                <br>
+                <br>
+
+                <h2>Creating a Table with Multidimensional Arrays </h2>
+                <script>
+                    var arry = [ 
+                        ["Harry", 18, "Male", "B.com"],
+                        ["Harry", 15, "Male", "B.com"],
+                        ["Harry", 16, "Male", "B.com"],
+                        ["Harry", 18, "Male", "B.com"]
+                    ];
+                    document.write("<table border='1px' cellspacing='0'>");
+                    for(var a = 0; a < 4; a++){
+                        document.write("<tr>");
+                        for(var b = 0; b < 4; b++ ){
+                            document.write("<td>" + arry[a][b] + "</td>")
+                        }
+                        document.write("</tr>");
+                    }
+                    document.write("</table>");
+                </script>
+
+
+                <br>
+                <br>
+                <br>
+
+
+                <h2>The array.length Function </h2>
+                <script>
+                    var arry = [ 
+                        ["Harry", 18, "Male", "B.com"],
+                        ["Harry", 15, "Male", "B.com"],
+                        ["Harry", 16, "Male", "B.com"],
+                        ["Harry", 18, "Male", "B.com", "red"],
+                        ["Harry", 18, "Male", "B.com"],
+                        ["Harry", 18, "Male", "B.com"],
+                        ["Harry", 18, "Male", "B.com"],
+                        ["Harry", 18, "Male", "B.com"],
+                        ["Harry", 18, "Male", "B.com"],
+                        ["Harry", 18, "Male", "B.com"]
+                    ];
+                    
+                    document.write(arry.length);
+                    document.write("<br>");
+
+                    document.write(arry[3].length);
+
+                    document.write("<table border='1px' cellspacing='0'>");
+
+
+                    for(var a = 0; a < arry.length; a++){
+
+                        document.write("<tr>");
+                        for(var b = 0; b < arry[a].length; b++ ){
+                            document.write("<td>" + arry[a][b] + "</td>")
+                        }
+                        document.write("</tr>");
+                    }
+
+
+                    document.write("</table>");
+                </script>
+
+
+
+</body>
+</html>

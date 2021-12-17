@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #test{
+            background-color: yellowgreen;
+            width: 300px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+
+        <h1>JavaSCript DOM coloneNode() Method </h1>
+            <pre>
+
+            </pre>
+            <h3>Example</h3>
+
+            <ul id="list">
+                <li>Orange</li>
+                <li>Apple</li>
+                <li>Grapes</li>
+                <li>Banana</li>
+            </ul>
+
+            <ul id="list2">
+                <li>Reddish</li>
+                <li>Carrot</li>
+            </ul>
+
+            <div id="test"></div>
+            <!-- <script>
+                var target = document.getElementById("list").children[0];
+                console.log(target);
+
+
+
+                            // Default(false) it will clone only tag 
+                            // If true it will colne tag and text inside texts 
+                            
+                var copyElement = target.cloneNode(false);
+                var copyElement = target.cloneNode(true);
+                console.log(copyElement);
+
+
+                document.getElementById("list2").appendChild(copyElement);
+
+            </script> -->
+
+
+
+
+            <script>
+
+                var target = document.getElementById("list").children[1];
+                console.log(target);
+
+
+
+                var copY = target.cloneNode(true);
+                console.log(copY);
+
+
+                document.getElementById("test").appendChild(copY);
+
+            </script>
+
+
+
+</body>
+</html>

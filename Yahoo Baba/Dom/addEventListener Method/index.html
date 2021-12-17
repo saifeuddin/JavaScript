@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+            <h1>JavaScript DOM addEventListener Method </h1>
+            <br>
+            <br>
+
+            <h2>
+                JavaScript DOM addEventListener() Method 
+            </h2>  
+                <big>
+                    <b>    
+                <pre>
+                    document.getElementById("id").addEventListener("click", functionName);
+                    
+                    document.getElementById("id").addEventListener("click", function(){
+                        statement....
+                    });
+                </pre>
+                    </b>
+                </big>
+            <h2>
+                JavaScript DOM removeEventListener() Method 
+            </h2>  
+                <big>
+                    <b>    
+                <pre>
+                    document.getElementById("id").removeEventListener("click", functionName);
+                    
+                    document.getElementById("id").removeEventListener("click", function(){
+                        statement....
+                    });
+                </pre>
+                    </b>
+                </big>
+
+
+
+
+
+            <h2> JavaScript ALL Basic Events </h2>      
+                <img src="Screenshot_1.jpg" alt="">
+
+
+
+            <h2> Assign Events Using the HTML DOM </h2>      
+                <img src="Screenshot_2.jpg" alt="">
+                <pre>
+                    document.getElementById('id').onClick = functionName;
+                </pre>
+
+            <h3>Example </h3>
+                <button id="button">  Button </button>
+
+
+
+
+
+
+
+            <!-- <script>
+                document.getElementById("button").onclick = abc;
+                document.getElementById("button").onmouseenter = abc;
+                
+
+
+                function abc(){
+                    document.getElementById("button").
+                    style.background = "blue";
+                }
+
+            </script> -->
+
+
+
+
+
+
+
+
+
+                    <!-- With addEventListener() separated function -->
+            <!-- <script>
+
+                document.getElementById("button").addEventListener("click", abc);
+                
+
+
+                function abc(){
+                    document.getElementById("button").
+                    style.background = "red";
+                }
+
+
+            </script> -->
+
+
+                        <!-- In Build Function  -->
+            <!-- <script>
+                document.getElementById("button").addEventListener("click", function(){
+
+                    this.style.background = "green";
+                });
+            </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- removeEventListener() separated function -->
+            <script>
+
+                document.getElementById("button").addEventListener("mouseleave", abc);
+                function abc(){
+                   this.style.background = "red";
+                };
+
+
+                document.getElementById("button").addEventListener("click", xxx);
+                function xxx(){
+                    this.removeEventListener("mouseleave", abc) ;
+                }
+            </script>
+
+
+
+
+</body>
+</html>
