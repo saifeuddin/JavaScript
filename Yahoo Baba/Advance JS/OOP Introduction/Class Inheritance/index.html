@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+        <h1>Advance Javascript - Class Inheritance Tutorial</h1>
+            <p>
+                In this tutorial you will learn javascript class    inheritance introduction tutorial.You can
+                learn what is inheritance in javascript es6 version in  hindi.
+            </p>
+            <h2>What is Inheritance? </h2>
+                <img src="Screenshot_7.jpg" alt="">
+                
+            <h2>Inheritance in Javascript</h2>
+                <img src="Screenshot_7.jpg" alt="">
+
+
+
+
+
+
+        <!-- <script>
+
+            class employee{
+                constructor(name){
+                    console.log("Constructor : Everyone " + name);
+                }
+            }
+
+            class manager extends employee{
+            }
+            let a = new manager('Saife Uddin');
+
+        </script> -->
+
+        <!-- <script>
+
+            class employee{
+                constructor(name){
+                    console.log("Constructor : Everyone " + name);
+                }
+            }
+
+            class manager extends employee{
+                constructor(name){
+                    super();
+                    console.log("Constructor : Manager " + name);
+                }
+            }
+            let a = new manager('Saife Uddin');
+
+        </script> -->
+
+
+
+
+
+
+
+
+
+                    <!-- with Prototype Method  -->
+        <!-- <script>
+            class employee{
+                constructor(name){
+                    this.empName = name;
+                    console.log("Constructor : Everyone");
+                }
+
+                info(){
+                    console.log("Constructor Info : " + this.empName);
+                }
+            }
+
+            class manager extends employee{
+                info(){
+                    // super.info();
+                    console.log("Manger Info: " + this.empName);
+                    super.info();
+                }
+            }
+
+            let a = new manager('Saife Uddin');
+            a.info();
+
+        </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <script>
+            class employee{
+                constructor(name, age, salary){
+
+                    this.empName = name;
+                    this.empAge = age;
+                    this.empSalary = salary;
+
+                    console.log("Constructor : Everyone");
+                }
+
+                info(){
+                    document.write(`<h3> Employee Class </h2> 
+                                    Name: ${this.empName} <br>
+                                    Age: ${this.empAge} <br>
+                                    Salary: ${this.empSalary}<br>`);
+                }
+            }
+
+            class manager extends employee{
+                info(){
+                    let tra = 1000;  
+                    let ph = 300; 
+                    let totalSalary = this.empSalary + tra + ph; 
+                    document.write(`<h3> Manager Class </h2>
+                        Name: ${this.empName} <br>
+                        Age: ${this.empAge} <br>
+                        Salary: ${totalSalary}<br>`);
+                    }
+            }
+
+            let a = new manager('Saife Uddin', 22, 20000);
+            let b = new employee('Uddin', 42, 12000);
+            a.info();
+            b.info();
+
+        </script> -->
+        
+        
+        
+        <script>
+            class employee{
+                constructor(name, age, salary){
+
+                    this.empName = name;
+                    this.empAge = age;
+                    this.empSalary = salary;
+
+                    console.log("Constructor : Everyone");
+                }
+
+                info(){
+                    document.write(`<h3> Employee Class </h2> 
+                                    Name: ${this.empName} <br>
+                                    Age: ${this.empAge} <br>
+                                    Salary: ${this.empSalary}<br>`);
+                }
+            }
+
+            class manager extends employee{
+                info(){
+                    let tra = 1000;  
+                    let ph = 300; 
+                    let totalSalary = this.empSalary + tra + ph; 
+                    document.write(`<h3> Manager Class </h2>
+                        Name: ${this.empName} <br>
+                        Age: ${this.empAge} <br>
+                        Salary: ${totalSalary}<br>`);
+                    }
+            }
+
+            class test extends manager{
+            }
+
+            let a = new test('Saife Uddin', 25, 20000);
+            a.info();
+
+        </script>
+
+
+
+
+
+
+
+</body>
+</html>

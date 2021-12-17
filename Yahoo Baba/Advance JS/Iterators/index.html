@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <h1>Advance JavaScript - Iterators Tutorial</h1>
+            <p>
+                In this tutorial you will learn javascript iterators tutorial.You can learn how to use
+                new javascript iteration method iterators to traverse array,string and object.
+            </p>
+            <img src="Screenshot_2.jpg" alt=""><br>
+            <img src="Screenshot_1.jpg" alt="">
+
+            
+            <h3>Example</h3>    
+
+
+
+
+
+                    <!-- type of this function  -->
+            <!-- <script>
+
+                var x = [122,333,434];
+                    console.log(typeof x[Symbol.iterator]);
+
+            </script> -->
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- use [Symbol.iterator]() function  -->
+
+            <!-- <script>
+                
+                var x = [122,333,434];
+                
+                let y = x[Symbol.iterator]();
+                
+                console.log(y.next());
+                    
+            </script> -->
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- jokhn value sesh hye jaby tokhn true ashby  -->
+            <!-- <script>
+                
+                var x = [122,333,434];
+                
+                let y = x[Symbol.iterator]();
+                
+                console.log(y.next());
+                console.log(y.next());
+                console.log(y.next());
+
+                console.log(y.next());
+                    
+            </script> -->
+            
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- we can control values  -->
+            <!-- <script>
+                
+                var x = [122,333,434];
+                
+                let y = x[Symbol.iterator]();
+                
+                y.next();
+                console.log(y.next());
+                y.next();
+
+                    
+            </script> -->
+
+
+
+
+
+
+
+
+
+                        <!-- we can print object value  -->
+            <!-- <script>
+                
+                var x = [122,333,434];
+                
+                let y = x[Symbol.iterator]();
+                
+                y.next();
+                console.log(y.next().value);
+                y.next();
+
+                console.log(y.next().value);
+                console.log(y.next().done);
+
+                    
+            </script> -->
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                        <!-- create a while loop  -->
+            <!-- <script>
+                
+
+                var x = [122,333,434];
+                let y = x[Symbol.iterator]();
+
+                
+                let result = y.next();
+
+                while(!result.done) {
+                    console.log(result.value);
+                    result = y.next();
+                }
+
+                    
+            </script> -->
+            
+            
+            
+            
+            
+                            <!-- iterator with string  -->
+            <!-- <script>
+                
+
+                var x = 'Saife Uddin ';
+                let y = x[Symbol.iterator]();
+
+                
+                let result = y.next();
+
+                while(!result.done) {
+                    console.log(result.value);
+                    result = y.next();
+                }
+
+            </script> -->
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                        <!-- create you own iterator  -->
+            <!-- <script>
+                function numberIterator(arr){
+                    var nextNum = 0;
+                    return {
+                        next(){
+                            return{
+                                value: arr[nextNum++],
+                                done: false
+                            }
+                        }
+                    }
+                };
+
+                let x = 'Saife Uddin ';
+                let y = numberIterator(x);
+
+                console.log(y.next());
+                console.log(y.next());
+                console.log(y.next());
+                console.log(y.next());
+                console.log(y.next());
+                console.log(y.next());
+                console.log(y.next());
+                console.log(y.next());
+                console.log(y.next());
+                console.log(y.next());
+                console.log(y.next());
+                console.log(y.next());
+                console.log(y.next());
+
+            </script> -->
+
+
+
+
+
+
+
+                        <!-- done: true  -->
+            <script>
+                function numberIterator(arr){
+                    var nextNum = 0;
+                    return {
+                        next(){
+                            if(nextNum < arr.length){
+                                return{
+                                    value: arr[nextNum++],
+                                    done: false
+                                    }
+                                }else{
+                                    return{
+                                        done: true
+                                    }
+                                }
+                            }
+                        }
+                    };
+
+                let x = 'Sa';
+                let y = numberIterator(x);
+
+                console.log(y.next());
+                console.log(y.next());
+
+                console.log(y.next());
+                console.log(y.next());
+
+            </script> 
+
+
+
+
+
+
+
+
+</body>
+</html>

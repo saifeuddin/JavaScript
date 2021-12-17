@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1>Advance JavaScript - Object Literals Tutorial</h1>
+        <p>
+            In this tutorial you will learn javascript object literals tutorial.You can learn what is
+            object literals in javascript es6 version in hindi.
+        </p>
+
+        
+        <h2>Object literals </h2>
+            <img src="Screenshot_2.jpg" alt="">
+
+
+
+
+
+                <!-- Old way  -->
+        <!-- <script>
+            let name = "Saife Uddin";
+            let course = "BTech";
+
+            var obj = {
+                name : name ,
+                course : course
+            };
+
+            console.log(obj);
+        </script> -->
+
+
+                <!-- ES6 Shortcut -->
+        <!-- <script>
+            let name = "Saife Uddin";
+            let course = "BTech";
+
+            var obj = {
+                name,
+                course
+            };
+
+            console.log(obj);
+        </script> -->
+        
+        
+        
+        
+        
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+
+        <img src="Screenshot_1.jpg" alt="">
+
+        <!-- <script>
+            let n = "Student";
+
+            var obj = {
+                [n + "Name"] : "Yahoo Baba" ,
+                course : "BTech"
+            };
+
+            console.log(obj);
+            console.log(obj.StudentName);
+        </script> -->
+
+
+
+                <!-- with function  -->
+        <!-- <script>   
+            let n = "student";
+
+            var obj = {
+                [n + "Name"] : "Saife Uddin" ,
+                course : "Name",
+                detail : function(){
+                    return `${this.studentName} is student of ${this.course}`;
+                }
+            };
+
+            console.log(obj);
+            console.log(obj.detail());
+        </script> -->
+        
+        
+        
+        
+        
+        
+        
+
+
+
+
+
+
+
+
+        
+                    <!-- function with ES6 Shortcut  -->
+        <!-- <script>
+            let n = "student";
+
+            var obj = {
+                [n + "Name"] : "Saife Uddin" ,
+                course : "Name",
+                detail(){
+                    return `${this.studentName} is student of ${this.course}`;
+                }
+            };
+
+            console.log(obj);
+            console.log(obj['detail']());
+        </script> -->
+
+                    <!--  function name a space dite caile   -->
+        <!-- <script>
+            let n = "student";
+
+            var obj = {
+                [n + "Name"] : "Saife Uddin" ,
+                course : "Name",
+                'detail show'(){
+                    return `${this.studentName} is student of ${this.course}`;
+                }
+            };
+
+            console.log(obj);
+            console.log(obj['detail show']());
+        </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <script>
+            let fname = "Saife";
+            let lname = "Uddin";
+            let course = "Ag";
+
+            function student(fn, ln, course){
+                return {fn, ln, course};
+            }
+
+            console.log(student(fname, lname, course));
+        </script> -->
+
+
+        <!-- <script>
+            let fname = "Saife";
+            let lname = "Uddin";
+            let course = "Ag";
+
+            function student(fn, ln, course){
+                let fullName = fname + " " + lname;
+                return {fullName, course};
+            }
+
+            console.log(student(fname, lname, course));
+        </script> -->
+
+
+
+
+
+
+
+
+                        <!--  Single value dekhte caile -->
+        <script>
+            let fname = "Saife";
+            let lname = "Uddin";
+            let course = "Ag";
+
+            function student(fn, ln, course){
+                let fullName = fname + " " + lname;
+                return {fullName, course};
+            }
+
+            let s = student(fname, lname, course);
+            console.log(s.fullName);
+            console.log(s.course);
+        </script>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <h1>Advance JavaScript - Generators Tutorial</h1>
+            <p>
+                In this tutorial you will learn javascript generators.You can learn how to use
+                new javascript generator functions to control every statement within function like javascript iterators.
+            </p>
+            <img src="Screenshot_3.jpg" alt=""><br>
+            <img src="Screenshot_1.jpg" alt="">
+
+            
+            <h3>Example</h3>    
+
+
+
+
+
+                    <!-- type of this function  -->
+            <!-- <script>
+
+                // function* test(){
+                function *test(){
+                    
+                    console.log("First");
+                    yield "Yield No 1";
+                    console.log("Second");
+                    yield "Yield No 2";
+                    console.log("Third");
+                    yield "Yield No 3";
+
+                }
+                let a = test();
+
+                console.log(a.next());
+                console.log(a.next());
+                console.log(a.next());
+                
+                console.log(a.next());
+
+            </script> -->
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                    <!-- full control over value  -->
+            <!-- <script>
+
+                // function* test(){
+                function *test(){
+                    
+                    yield "Yield No 1";
+                    yield "Yield No 2";
+                    yield "Yield No 3";
+
+                }
+                let a = test();
+
+                console.log(a.next());
+                console.log(a.next().value);
+                a.next();
+                
+                console.log(a.next());
+
+            </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- if there is many yields  -->
+            <!-- <script>
+
+                // function* test(){
+                function *test(){
+                    
+                    yield "Yield No 1";
+                    yield "Yield No 2";
+                    yield "Yield No 3";
+                    yield "Yield No 4";
+                    yield "Yield No 5";
+                    yield "Yield No 6";
+                    yield "Yield No 7";
+                    yield "Yield No 8";
+                    yield "Yield No 9";
+                    yield "Yield No 10";
+                    yield "Yield No 11";
+
+                }
+                let a = test();
+
+                for(let value of a){
+
+                    console.log(value);
+                }
+
+            </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <script>
+
+                // function* test(){
+                function *test(){
+                    let nextNum = 300;
+
+                    while(true){
+                        yield(nextNum++);
+                    }
+                    
+                }
+                let a = test();
+                
+                console.log(a.next());
+                console.log(a.next());
+                console.log(a.next());
+                console.log(a.next());
+                console.log(a.next());
+                console.log(a.next());
+                console.log(a.next());
+                console.log(a.next());
+                console.log(a.next());
+                console.log(a.next());
+                console.log(a.next());
+                console.log(a.next().value);
+                console.log(a.next().value);
+                console.log(a.next().value);
+                console.log(a.next().value);
+                console.log(a.next().value);
+                console.log(a.next().value);
+                console.log(a.next().value);
+                console.log(a.next().value);
+                console.log(a.next().value);
+                console.log(a.next().value);
+                console.log(a.next().value);
+                console.log(a.next().value);
+                console.log(a.next().value);
+
+            </script> -->
+
+            <!-- <script>
+
+                // function* test(){
+                function *test(){
+                    let result = (yield) * 10;
+
+                    console.log("Result : " +result )
+                }
+                let a = test();
+                
+                a.next();
+                a.next(500);
+
+                            //Not working because there is one yield 
+                a.next(600);
+                a.next(700);
+
+            </script> -->
+
+
+            <!-- <script>
+
+                // function* test(){
+                function *test(){
+                    let yArr = [yield, yield, yield];
+
+                    console.log("Result : " + yArr )
+                }
+                let a = test();
+                
+                a.next();
+                a.next(500);
+
+                            //here it will work because there is three yield 
+                a.next(600);
+                a.next(700);
+                a.next(800);
+
+            </script> -->
+
+
+
+            <!-- <script>
+
+                // function* test(){
+                function *test(){
+                    let yArr = [yield, yield, yield];
+
+                    console.log("Result : " + yArr[0] )
+                }
+                let a = test();
+                
+                a.next();
+                a.next(500);
+
+                            //here it will work because there is three yield 
+                a.next(600);
+                a.next(700);
+                a.next(800);
+
+            </script> -->
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+                        <!-- u can also pass string value  -->
+           <!-- <script>
+
+                // function* test(){
+                function *test(){
+                    let yArr = [yield, yield, yield];
+
+                    console.log("Result : " + yArr[0] )
+                }
+                let a = test();
+                
+                a.next();
+                a.next("HTML");
+
+                            //here it will work because there is three yield 
+                a.next("Php");
+                a.next("Python");
+                a.next("JavaScript");
+
+            </script> -->
+          
+          
+          
+          
+          
+          
+          
+          
+            <!-- <script>
+
+                // function* test(){
+                function *test(){
+
+                    yield 55;
+                    yield ["Node", "React", "Vew"];
+                }
+
+                let a = test();
+                
+                console.log(a.next());
+                console.log(a.next());
+                
+                        // Undefined
+                console.log(a.next());
+
+            </script>  -->
+
+
+
+
+
+
+        <!-- <script>
+
+                // function* test(){
+                function *test(){
+
+                    yield 55;
+
+                    // Separately print all values
+                    yield* ["Node", "React", "Vew"];
+                }
+
+                let a = test();
+                
+                // console.log(a.next());
+                console.log(a.next().value);
+
+                // console.log(a.next());
+                console.log(a.next().value);
+                // console.log(a.next());
+                console.log(a.next().value);
+                // console.log(a.next());
+                console.log(a.next().value);
+                
+                        //Undefined
+                // console.log(a.next());
+                console.log(a.next().value);
+
+            </script> -->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                        <!-- with Spread Operator  -->
+            <!-- <script>
+
+                // function* test(){
+                function *test(){
+                    yield "Node";
+                    yield "React";
+                    yield "Vew";
+                }
+
+                let a = test();
+                
+                console.log(a.next());
+                // console.log(a.next().value);
+
+                console.log([...a]);
+
+            </script> -->
+            
+            
+            
+            
+            
+            
+
+
+
+
+
+                        <!-- return() function  -->
+            <script>
+
+                // function* test(){
+                function *test(){
+                    yield "Node";
+                    yield "React";
+                    yield "Vew";
+                }
+
+                let a = test();
+                
+                console.log(a.next().value);
+                console.log(a.return("Ending Now"));
+                
+                console.log(a.next().value);
+
+
+            </script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

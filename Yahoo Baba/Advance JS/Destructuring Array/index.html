@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1>Advance JavaScript - Destructuring Array Tutorial </h1>
+        <p>
+            In this tutorial you will learn javascript destructuring array tutorial.You can learn what is
+            Destructuring Array in javascript es6 version in hindi.
+        </p>
+        <img src="Screenshot_3.jpg" alt="">
+        
+
+
+                <!--  Destructuring  -->
+        <!-- <script>
+
+            // let user = ["Yahoo Baba", 25, "Delhi"];
+            // let[name, age, city ] = user;
+
+
+
+
+
+            //          // undefined
+            // let user = [, ,"Delhi"];
+            //         // U can Define Here     
+            // let[name, age= 20, city ] = user;
+            
+
+
+
+            // let user = [,29 ,"Delhi"];
+            //         // Will not override 
+            // let[name, age= 20, city ] = user;
+
+            
+
+
+            console.log(name);
+            console.log(age);
+            console.log(city);
+
+        </script> -->
+
+
+
+
+                            <!-- With nested arrays  -->
+
+        <!-- <script>
+            let user = ["Yahoo Baba", 25, "Delhi",["male", 25000]];
+            let[name, age, city, [gender, salary] ] = user;
+
+
+            console.log(name);
+            console.log(age);
+            console.log(city);
+            console.log(gender);
+            console.log(salary);
+
+
+        </script> -->
+
+
+
+
+
+
+
+
+
+
+                        <!-- with function  -->
+            <!-- <script>
+
+                function user([name, age, city]){
+                    
+                    console.log(name);
+                    console.log(age);
+                    console.log(city);
+                }
+
+                user(["Yahoo Baba", 25, "Delhi"]);
+
+            </script> -->
+
+            
+            <script>
+
+                function user(){
+                    return ["Yahoo Baba", 25, "Delhi"];
+                }
+                let[name, age, city] = user();
+
+                console.log(name);
+                console.log(age);
+                console.log(city);
+                
+
+            </script>
+
+
+
+
+
+
+
+
+
+                        <!-- with rest operator  -->
+
+        <!-- <script>
+            let user = ["Yahoo Baba", 25, "Delhi"];
+            let[name,...args] = user;
+
+
+            console.log(name);
+            console.log(args);
+
+        </script> -->
+
+
+
+
+
+
+
+
+
+</body>
+</html>

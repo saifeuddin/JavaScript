@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <h1>Advance JavaScript - Rest Operator Tutorial</h1>
+            <p>
+                In this tutorial you will learn javascript rest operator tutorial.You can learn what is
+                rest operator in javascript es6 version in hindi.
+            </p>
+            <img src="Screenshot_1.jpg" alt="">
+            <img src="Screenshot_2.jpg" alt="">
+
+
+
+
+
+
+
+            <!-- <script>
+
+                function sum() {
+                    console.log(arguments);
+                    let sum = 0;
+
+                    for(let i in arguments){
+                        sum += arguments[i];
+                    }
+                    document.write(sum + "<br>");
+
+                }
+                sum(20,30,40);
+                sum(20,30);
+
+            </script> -->
+
+
+
+
+            <script>
+
+                function sum(name, course, ...arguments) {
+                    console.log(arguments);
+                    let sum = 0;
+
+                    document.write(`Hello ${name} of ${course} : `)
+
+                    for(let i in arguments){
+                        sum += arguments[i];
+                    }
+                    document.write(sum + "<br>");
+
+                }
+                sum("Saife Uddin", "AG", 20, 30, 40);
+                sum("Ekra Jahan", "BBA", 20,30);
+
+            </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <h1>
+            Advance JavaScript - Async & Await function Tutorial
+        </h1>
+            <p>
+                In this tutorial you will learn javascript async and await method tutorial.You can learn
+                how to use async and await to fetch data in javascript async method.
+            </p>
+            <b> This function returns a promise </b>
+            <img src="Screenshot_4.jpg" alt="">
+
+
+
+
+
+
+
+
+
+                    <!-- create a async function  -->
+            <!-- <script>
+                async function test(){
+                    return "hello";
+                }
+
+                test().then((result) => {
+
+                    console.log(result)
+                });
+            </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- async with arrow function  -->
+            <!-- <script>
+                let text = async () => "hello";
+
+                test().then((result) => {
+
+                    console.log(result)
+                });
+            </script> -->
+            
+            
+            
+            
+            
+            
+            
+            
+
+
+
+            
+                    <!-- Async with Await  -->
+            <!-- <script>    
+                let test = async () => {
+
+                console.log("2 : Message");
+                await console.log("3 : Message");
+                console.log("4 : Message");
+
+                };
+
+                console.log("1 : Message");
+                test();
+                console.log("5 : Message");
+
+            </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- Use with fetch method  -->
+            <!-- <script>  
+
+                async function test() {
+
+                console.log("2 : Message");
+                const response = await fetch("j.json");
+                console.log("3 : Message");
+                const students = await response.json();
+
+                return students;
+                };
+
+                console.log("1 : Message");
+                let a = test();
+                console.log("4 : Message");
+                console.log(a);
+
+            </script> -->
+            
+            
+            
+            
+            
+
+
+
+
+
+
+
+
+            
+                        <!-- with Promise  -->
+            <!-- <script>  
+
+                async function test() {
+
+                const response = await fetch("j.json");
+                const students = await response.json();
+
+                return students;
+                };
+
+                test().then((result) =>{
+                    console.log(result);
+                }).catch((error)=>{
+                    console.log(error);
+                });
+
+            </script> -->
+            
+            
+            
+            
+            
+
+
+
+            
+                        <!-- shortcut  with try and catch -->
+            <script>  
+                
+                async function test() {
+
+                try{
+                const response = await fetch("j.json");
+                const students = await response.json();
+
+                return students;
+                    }catch(error){
+                        console.log(error);
+                    };
+                }
+                test().then((result) =>{
+                    console.log(result);
+                });
+
+            </script>
+            
+            
+
+
+
+
+
+
+
+
+
+
+                        <!-- shortcut --> 
+            // <script>  
+
+            //     async function test() {
+
+            //     return(await fetch("j.json")).json();
+            //     };
+
+            //     test().then((result) =>{
+            //         console.log(result);
+            //     }).catch((error)=>{
+            //         console.log(error);
+            //     });
+
+            // </script>
+                        
+            
+            
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

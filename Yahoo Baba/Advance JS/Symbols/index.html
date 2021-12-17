@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <h1>Advance JavaScript - Symbols Tutorial</h1>
+            <b>use to create unique values </b>
+            <p>
+                In this tutorial you will learn javascript symbols tutorial.You can learn how to use
+                javascript symbol data type.
+            </p>
+            <img src="Screenshot_1.jpg" alt="">
+
+
+            <h3>Example </h3>
+
+
+
+
+
+            <!-- <script>
+                var id = Symbol("hello o");
+                var id2 = Symbol("hello o");
+
+                
+                console.log(id);
+                console.log(typeof id);
+                console.log( id == id2);
+                console.log( id === id2);
+            </script> -->
+            
+            
+            
+            
+            
+
+
+
+
+
+
+            
+                    <!-- Error on alert  -->
+            <!-- <script>
+                var id = Symbol("hello o");
+
+                console.log(id);
+                alert(id);
+            </script>    -->
+
+                <!-- this will not error  -->
+            <!-- <script>
+                var id = Symbol("hello o");
+
+                console.log(id);
+                alert(id.toString());
+            </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- with description method to see values  -->
+            <!-- <script>
+                let age = Symbol();
+                let user = {
+                    name : "saife",
+                    class: "ten",
+                    [age]: 33
+                };
+                console.log(user);
+            </script> -->
+
+                    <!-- add description to symbol  -->
+            <!-- <script>
+                let age = Symbol("age");
+                let user = {
+                    name : "saife",
+                    class: "ten",
+                    [age]: 33
+                };
+                console.log(user);
+            </script> -->
+           
+           
+           
+           
+           
+           <!-- <script>
+                let age = Symbol("age");
+
+                let user = {
+                    name : "saife",
+                    class: "ten"
+                };
+                user[ age] = 55;
+
+
+                console.log(user);
+                console.log(user.class);
+
+                            // to show symbol value 
+                console.log(user[age]);
+            </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- used with for loop  -->
+
+            <!-- <script>
+
+                let age = Symbol("age");
+
+                let user = {
+                    name : "saife",
+                    class: "ten"
+                };
+                        // it will skip in for loop we cant use symbol in for in loop
+                user[ age] = 55;
+
+                user["Gender"] = "Male"
+
+                for(key in user){
+                    console.log(key);
+                }
+
+            </script> -->
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                    <!-- symbol wil also skip in json format-->
+            <!-- <script>
+
+                let age = Symbol("age");
+
+                let user = {
+                    name : "saife",
+                    class: "ten"
+                };
+                user[ age] = 55;
+
+                user["Gender"] = "Male"
+
+                console.log(user);
+
+                                // To chang any object in json 
+                console.log(JSON.stringify(user));
+
+            </script> -->
+
+
+
+
+
+
+
+
+
+            <script>
+
+                let age = Symbol("age");
+
+                let user = {
+                    name : "saife",
+                    class: "ten"
+                };
+                user[age.description] = 55;
+
+                user["Gender"] = "Male"
+
+                console.log(user);
+
+                                // To chang any object in json 
+                console.log(JSON.stringify(user));
+
+            </script>
+
+
+
+
+
+
+
+
+</body>
+</html>

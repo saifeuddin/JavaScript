@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <!-- <h1>Advance JavaScript - Ajax Tutorial</h1>
+
+            <h2>What is </h2>
+            <p>
+                In this tutorial you will learn javascript ajax tutorial.You can learn how to use ajax in javascript xmlhttprequest to load page fast and without refersh.
+            </p>
+
+                <img src="Screenshot_3.jpg" alt="">
+                <p>
+                    Ajax is technique for creating fast and dynamic web pages
+                </p>
+            <h2>When use of Ajax</h2>
+                <img src="Screenshot_1.jpg" alt="">
+
+            <h2>How Ajax works </h2>
+                <img src="Screenshot_2.jpg" alt=""> <br>
+                <img src="Screenshot_4.jpg" alt=""> <br>
+                <img src="Screenshot_5.jpg" alt=""> 
+                
+            <h2>Ajax Syntax </h2>
+                <img src="Screenshot_6.jpg" alt="">  -->
+
+
+
+            <p id="demo"> Here we load data</p>
+            <button onclick="loadData()">Click </button>
+
+
+
+
+
+
+
+
+            <!-- <script>
+                function loadData(){
+                    
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function(){
+                        if (this.readyState == 4 && this.status == 200){
+                            console.log(this.responseText);
+                        }
+                    };
+
+                    xhttp.open("GET","read.txt", true);
+                    xhttp.send();
+                }
+
+            </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- From another site  -->
+
+            <script>
+                function loadData(){
+                    let xhttp = new XMLHttpRequest();
+
+                    xhttp.onreadystatechange = function(){
+                        if(this.readyState == 4 && this.status == 200){
+                            // document.getElementById('demo').innerHTML = this.responseText;
+                            console.log(this.responseText);
+                        }
+                        else if(this.readyState == 4 && this.status == 404){
+                            document.getElementById('demo').innerHTML = 'File not found';
+                        }
+                    }
+
+                    xhttp.open('GET','https://jsonplaceholder.typicode.com/posts', true);
+                    xhttp.send();
+                }
+            </script>
+
+
+
+
+
+</body>
+</html>
