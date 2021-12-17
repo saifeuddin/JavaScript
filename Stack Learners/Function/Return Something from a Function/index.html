@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+        <h1> Return Something from a Function in Javascript </h1>
+            <p>
+                Function is a machine which has three parts : <br> 
+                1. Input <br>
+                2. Output <br>
+                3. Processing <br>
+            </p>
+            <b>
+                Function reduce repeated works.
+            </b>
+            <p>
+
+            </p>
+
+
+
+
+
+
+
+
+
+
+                    <!-- return  -->
+        <script>
+            
+            function sum() {
+                var sum = 0;
+                
+                for(var i = 0; i < arguments.length; i++) {
+                    sum += arguments[i];
+                }
+                return sum;
+            }
+            var result = sum(100, 400);
+            
+            console.log(result);
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- Example -->
+        <script>
+            function person(name, email) {
+
+                return {
+                    name : name ,
+                    email : email
+                }
+            }
+
+            var p1 = person('Saife Uddin ', 'Uddinaif020@gmail.com');
+
+            console.log(p1);
+
+
+        </script>
+
+
+
+
+</body>
+
+</html>

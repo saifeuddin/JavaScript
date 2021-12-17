@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1>Reduce Function in Javascript </h1>
+            <p>
+                akta iterable object er 2 ta value niye final akta result produce kora. Ai method filter o korte pare .
+            </p>
+            <pre>
+                var sum = arr.reduce(
+                    function(previousValue, currentValue, index, array),
+                    initialValue )
+            </pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- reduce() Method  -->
+            <!-- <script>
+
+                var arr = [1,2,3,4]
+                var sum = arr.reduce( function(prev, curr) {
+
+                    return prev + curr;
+                })
+
+                console.log(sum);
+
+            </script> -->
+            
+            
+            
+            
+                    <!-- with initial value  -->
+            <!-- <script>
+
+                var arr = [1,2,3,4]
+                var sum = arr.reduce( function(prev, curr) {
+
+                    return prev + curr;
+                }, 200)
+
+                console.log(sum);
+
+            </script> -->
+            
+            
+
+                    <!-- print max number  -->
+            <!-- <script>
+
+                var arr = [1,2,3,4]
+
+
+                var sum = arr.reduce( function(prev, curr) {
+
+                    return prev + curr;
+                }, 200);
+
+                console.log(sum);
+
+
+
+
+
+
+                var max = arr.reduce(function(prev, curr) {
+
+                    return Math.max(prev, curr);
+                });
+
+                console.log(max);
+
+            </script> -->
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+
+                    <!-- Implementation / Build your own reduce function  -->
+            
+            <script>
+
+                var arr = [14,24,34,45];
+                function myReduce (a, cb, acc){
+
+                    for(var i = 0; i < a.length; i++){
+                        acc = cb (acc, a[i]);
+                    };
+                    return acc;
+                };
+                
+
+
+
+
+                var sum = myReduce(arr, function (prev, curr) {
+                    return prev + curr;
+
+                }, 0);
+                
+                
+                var max = myReduce(arr, function (prev, curr) {
+                    return Math.max(prev , curr);
+
+                }, 0);
+                
+                
+                var min = myReduce(arr, function (prev, curr) {
+                    return Math.min(prev , curr);
+
+                }, 1);
+
+                console.log(sum, max, min);
+
+            </script>
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+    
+</body>
+</html>

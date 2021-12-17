@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1> Foreach Implementation in Javascript </h1>
+        <p>
+            Modify given array and replaced with new array 
+        </p>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+            <!-- Traverse na array with foreach method -->
+    <!-- <script>
+
+            var c = [ 1, 2, 3, 4] 
+
+            c.forEach(function(index, value, arr){
+
+                console.log(value, index, arr);
+                
+            } )
+
+    </script> -->
+
+
+
+
+
+
+
+
+
+            <!-- Sum of array values  -->
+    <!-- <script>
+
+            var arr = [ 1, 2, 3, 4, 5] 
+            var sum = 0;
+
+            arr.forEach(function(value){
+
+                sum += value;
+            });
+            console.log(arr);
+            console.log(sum);
+
+    </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Build  own forEach method  -->
+    <!-- <script>
+        
+        var arr = [ 1, 2, 3, 4, 5];
+
+        function forEach (a) {
+
+            for(var i = 0; i < a.length; i++) {
+                console.log(arr[i]);
+            };
+        };
+
+        forEach(arr);
+
+    </script> -->
+
+
+    <!-- <script>
+        
+        var arr = [ 1, 2, 3, 4, 5];
+
+        function forEach (a, cb) {
+
+            for(var i = 0; i < a.length; i++) {
+                cb(arr[i]);
+            };
+        };
+
+        forEach(arr, function (value) {
+            console.log(value);
+        } );
+
+    </script> -->
+
+
+            <!-- sum  -->
+    <!-- <script>
+        
+        var arr = [ 1, 2, 3, 4, 5];
+
+        function forEach (a, cb) {
+
+            for(var i = 0; i < a.length; i++) {
+                cb(arr[i]);
+            };
+        };
+
+        var sum = 0;
+        forEach(arr, function (value) {
+            sum += value;
+        });
+        console.log(sum);
+
+    </script> -->
+
+
+
+                <!-- Same like forEach method  -->
+    <!-- <script>
+        
+        var arr = [ 1, 2, 3, 4, 5];
+
+        function forEach (a, cb) {
+
+            for(var i = 0; i < a.length; i++) {
+                cb(arr[i], i, a);
+            };
+        };
+
+        var sum = 0;
+        forEach(arr, function (value, index, arr) {
+
+            console.log(index, value, arr);
+
+            sum += value;
+        });
+        console.log(sum);
+
+    </script> -->
+    
+    
+    
+    
+    
+    
+    
+    
+            <!-- Increase array values  -->
+    <script>
+        
+        var arr = [ 1, 2, 3, 4, 5];
+
+        function forEach (a, cb) {
+
+            for(var i = 0; i < a.length; i++) {
+                cb(arr[i], i, a);
+            };
+        };
+
+
+
+        var sum = 0;
+        forEach(arr, function (value, index, arr) {
+
+            console.log(index, value, arr);
+
+            sum += value;
+        });
+        console.log(sum);
+
+
+
+
+        forEach(arr, function(value, index, arr) {
+
+            arr[index] = value +6;
+        });
+        console.log(arr);
+
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

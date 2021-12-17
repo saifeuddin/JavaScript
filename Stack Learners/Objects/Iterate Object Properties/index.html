@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <h1> JavaScript Iterate Object Properties </h1>
+
+            <h2>
+                
+                Object is special data type where we can organize multiple data under a single variable.
+
+            </h2>
+            <b>
+                in Operator  is used  to traverse / iterate / search a property in Object .
+            </b>
+
+            <pre>
+                <b>
+
+                    var obj = {
+                        key : "value",
+                        key : "value"
+                    };
+
+                </b>
+            </pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- Iterate or Traversing  with in operator -->
+        <!-- <script>
+
+            var obj = {
+                x: 40,
+                y: 44,
+                z: 33
+            }
+
+                    // True
+            console.log( 'x' in obj);
+
+                    // False
+            console.log( 'a' in obj);
+
+        </script> -->
+        
+        
+        
+        
+        
+        
+            <!-- Traverse With for in Loop -->
+        <!-- <script>
+
+            var obj = {
+                x: 40,
+                y: 44,
+                z: 33
+            }
+
+            for ( var i in obj ) {
+
+                console.log(i);
+                console.log(obj[i] );
+            }
+
+        </script> -->
+
+
+        <script>
+
+            var obj = {
+                x: 40,
+                y: 44,
+                z: 33
+            }
+
+            for ( var i in obj ) {
+
+                console.log( i.toUpperCase() + " : " + obj[i] );
+            }
+
+        </script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

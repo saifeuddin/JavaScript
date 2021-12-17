@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1> Functional Programming in JavaScript </h1>
+        <p>
+            'Functional Programming' is a paradigm a style od building structure and elements of computer programs that treats computation as the evaluation of mathematical  function and avoids changing -state and mutable data.
+        </p>
+        <p>
+            
+        </p>
+        <b>There are Three main Terms</b>
+
+        <ol>
+            <li> Pure Functions 
+                <p> 
+                    It returns the same result if given the same arguments. 
+                </p>
+                <p>
+                    It does not cause any observable side-effect.
+                </p>
+            </li>
+
+            <li> First  Class Functions</li>
+            <li> Higher order Functions</li>
+        </ol>
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Pure Functions -->
+
+    <!-- <script>
+
+        function sqr (n) {
+            return n*n;
+        }
+
+        console.log(sqr(2));
+
+    </script>  -->
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Not a pure function  -->
+    <!-- <script>
+
+        var n = 10;
+
+        function a() {
+            n = 200;
+        }
+        // console.log(n);
+        
+        a();
+        console.log(n);
+
+    </script> -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+            <!-- Not a pure function  -->
+
+    <script>
+
+        var obj = { 
+            x : 10,
+            y : 40,
+        }
+
+        function point(point) {
+            point.x = 200;
+            point.y = 2001;
+        }
+
+        console.log(obj);
+        
+        point(obj);
+        console.log(obj);
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>

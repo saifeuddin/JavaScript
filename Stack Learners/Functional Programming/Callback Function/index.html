@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1> Callback Function in Javascript </h1>
+        <h2>Definition </h2>
+            <p>
+                A callback function is a function passed into another function as an argument, which is then invoked
+                inside the outer function to complete some kind of routine or action. ... A good example is the callback
+                functions executed inside a . then() block chained onto the end of a promise after that promise fulfills
+                or rejects.
+            </p>
+            <p>
+                Simply put: A callback is a function that is to be executed after another function has finished
+                executing — hence the name 'call back'. ... Functions that do this are called higher-order functions.
+                Any function that is passed as an argument is called a callback function.
+            </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Problem is akhny sodho amra sum krte partesi subtract multiply divide krte partesi na , krte gele o code long hye jabvy ... So nichy amra call back
+    <!-- <script>   
+        function sample(a, b) {
+            var c = a + b;
+            var d = a - b; 
+            var result = sum(c ,d);
+            return result
+        }
+        function sum(a, b) {
+
+            return a + b;
+        }
+
+        console.log(sample(5, 5) );
+
+    </script> -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+            <!-- Call back function  -->
+    <script>
+
+        function sample(a, b, cb) {
+            var c = a + b;  
+            var d = a - b;  
+
+            var result = cb(c, d);
+            return result
+        }
+
+        function sum(a, b) {
+            return a + b;
+        }
+
+
+
+
+        var addition = sample(5, 5, sum)
+        console.log(addition);
+        
+
+
+
+
+        var subtraction = sample(5, 4, function (c, d) {
+            return  c - d;
+        } );
+        console.log(subtraction);
+        
+        
+        
+        var multiply = sample(25, 5, function(c, d) {
+            return c*d;
+        });
+        console.log(multiply);
+        
+        
+        
+        
+        var divide = sample(25, 5, function(c, d) {
+            return c / d;
+        });
+        console.log(divide);
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

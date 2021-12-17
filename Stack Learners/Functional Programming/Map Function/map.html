@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Map Function in Javascript</h1>
+        <p>
+            Modify given array and create a new array with modified values. Not replace !
+        </p>
+
+
+
+
+
+
+
+
+                <!-- See how map function works  -->
+    <!-- <script>        
+
+        var arr = [ 1,2,3]
+
+        var sqrArr = arr.map(function(value, index, arr) {
+
+            // return Math.random() * 100
+
+            return  value* value;
+        });
+
+        console.log(arr);
+        console.log(sqrArr);
+
+    </script> -->
+    
+    
+    
+    
+
+
+
+
+
+
+                <!-- General way without any callback  -->
+    <!-- <script>        
+
+        var arr = [ 1,2,3]
+
+        function myMap(a) {
+            
+            var newArray = [];
+            for(var i = 0; i < a.length; i++) {
+                
+                var temp = arr[i] * arr[i];
+                newArray.push(temp);
+            }
+            return newArray;
+        };
+
+        console.log(arr);
+        console.log(myMap(arr));
+
+    </script> -->
+    
+    
+
+
+            <!-- With callback function  -->
+    <!-- <script>        
+
+        var arr = [ 1,2,3]
+        function myMap(a, cb) {
+            
+            var newArray = [];
+            for(var i = 0; i < a.length; i++) {
+                
+                var temp = cb(arr[i], i, arr);
+                newArray.push(temp);
+            }
+            return newArray;
+        };
+
+        var qb = myMap(arr, function(value) {
+            return value * value * value;
+        });
+        
+        var mTen = myMap(arr, function(value) {
+            return value * 10;
+        });
+
+
+        console.log(arr);
+        console.log(qb);
+        console.log(mTen);
+
+    </script> -->
+
+
+            <!-- Same,  practice-->
+    <script>
+
+        var arr = [2,3,4,5,6];
+
+        function myMap(arr, cb) {
+
+            var newArray = [];
+            for(var i = 0; i < arr.length; i++) {
+
+                var temp = cb(arr[i], i, arr);
+                newArray.push(temp);
+
+            };
+            return newArray;
+        };  
+
+        var result = myMap(arr,function(value){
+            return value + value -value * value;
+        });
+
+        console.log(arr);
+        console.log(result);
+
+    </script>
+
+
+
+
+</body>
+
+</html>

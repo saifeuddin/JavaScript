@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1> Functional Programming in JavaScript </h1>
+    <p>
+        'Functional Programming' is a paradigm a style od building structure and elements of computer programs that
+        treats computation as the evaluation of mathematical function and avoids changing -state and mutable data.
+    </p>
+    <b>There are Three main Terms</b>
+    <ol>
+        <li> Pure Functions
+            <p>
+                It returns the same result if given the same arguments.
+            </p>
+            <p>
+                It does not cause any observable side-effect.
+            </p>
+        </li>
+        <li> First Class Functions 
+            <p>
+                Function can act like value
+            </p>
+        </li>
+        <li> Higher Order Functions</li>
+    </ol>
+
+
+
+
+
+
+
+    <h2> First class function in JavaScript </h2>
+    <b>Rules </b>
+    <ol>
+        <li> 
+            A function can be stored in a variable
+        </li>
+        <li> 
+            A function can be stored in an Array
+        </li>
+        <li> 
+            A function can be stored in an Object 
+        </li>
+        <li>
+            We can create function as need
+        </li>
+        <li>
+            We can create function as an Arguments
+        </li>
+        <li>
+            We can return Functions from another function
+        </li>
+    </ol>
+
+
+
+
+
+
+
+
+            <!-- Stored in a Variable -->
+    <!-- <script>
+        
+        function add(a,b) {
+            return a+b
+        }
+        var sum = add;
+
+        console.log(sum(30,70) );
+        console.log( typeof sum);
+
+    </script> -->
+
+
+
+
+
+
+
+
+
+            <!-- Stored in an Array -->
+    <!-- <script>
+        
+        function add(a,b) {
+            return a+b
+        }
+
+
+
+
+
+        var arr = [];
+        arr.push(add);
+
+        console.log(arr);
+        console.log(arr[0](100,900) );
+
+    </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Stored in an Object -->
+    <!-- <script>
+        
+        function add(a,b) {
+            return a+b
+        }
+
+
+
+
+
+        var obj = {
+            sum : add
+        }
+
+        console.log(obj);
+        console.log(obj.sum(100,900) );
+
+    </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Create function as we need  -->
+    <script>
+        setTimeout(function () {
+
+            console.log('Create function as we need');
+
+        }, 100);
+    </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

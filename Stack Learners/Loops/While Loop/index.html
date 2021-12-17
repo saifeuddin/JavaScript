@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1> JavaScript While Loop </h1>
+        <h2> Jdi 1st time condition ta false hoye jay tahole bodyr kono kiso execute hbe nah.</h2>
+
+
+
+    <script>
+
+        var  a = true;
+
+        while (a)
+        {
+            rand = Math.floor(Math.random() * 10 + 1 );
+            
+            if(rand == 9){
+
+                console.log("Winner");
+
+                a = false;
+            } else {
+                console.log( "You have got " + rand );
+            }
+        } 
+        
+    </script>
+
+
+
+
+</body>
+</html>
