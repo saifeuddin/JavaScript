@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+        rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background: linear-gradient(260deg, #9b6c50 0%, #4f2626 100%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            width: 20rem;
+            height: 9rem;
+            border-radius: .5rem;
+            padding: .8rem;
+            font-family: 'Poppincs', sans-serif;
+            overflow: hidden;
+        }
+
+        .container img{
+            width: 30%;
+            height: 50px;
+            padding-right: 1rem;
+        }
+
+        .text{
+            width: 70%;
+        }
+        .cookie-title{
+            font-size: 1rem;
+            font-weight: lighter;
+            padding-bottom: 15px;
+        }
+        .cookie-subtitle{
+            font-weight: bold;
+            font-size: .6rem;
+            padding-bottom: 15px;
+        }
+        .container .text button{
+            outline: none;
+            border-style: none;
+            padding: .5rem 1rem;
+            color: #4f2626;
+            font-size: .7rem;
+            font-weight: bold;
+            border-radius: .3rem;
+        }
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="./cookie-svgrepo-com.svg" alt="">
+
+        <div class="text">
+            <h2 class="cookie-title"> Cookie Policy </h2>
+            <p class="cookie-subtitle">
+                We use analytical cookie to ame your bla bla bla bla jdi ai ty youtube
+            </p>
+            <button>Okay, got it</button>
+        </div>
+    </div>
+
+
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"
+        integrity="sha512-gWlyRVDsJvp5kesJt4cSdPPLZIBdln/uSwzYgUicQcbTgRNQE4QhP5KUBIYlLYLkiKIQiuD7KUMHzqGNW/D2bQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+
+
+
+    <!-- <script>
+        gsap.fromTo('.text',
+                        {opacity: 0, y: 20},
+                        {opacity: 1, y: 0, duration: 1}
+        )
+    </script> -->
+
+
+    <script>
+
+        const tl = gsap.timeline({ defaults: {duration: .75, ease: 'power1.out'} })
+
+        tl.fromTo('.container', {scale: 0}, {scale: 1, ease: 'elastic.out(1, .4)', duration: 1.7})
+        tl.fromTo('.container img', {opacity: 0, x: -50, rotation: '-45deg'},{opacity: 1, x: 0, rotation: '0deg'}, '<50%')
+        tl.fromTo('.text', {x: 30, opacity: 0},{ x: 0, opacity: 1}, '<')
+
+
+
+
+        tl.fromTo('.container img', {y: 0, rotation: 0}, {y: -20, rotation: '-20deg', yoyo: true, repeat: -1})
+
+
+
+
+        const button = document.querySelector('button')
+        button.addEventListener('click', ()=> {
+            gsap.to('.container', {
+                opacity: 0, y: 100, duration: .75, ease: 'power1.out'
+            })
+        })
+    </script>
+</body>
+</html>

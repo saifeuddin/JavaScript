@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Page Animation</title>
+    <link rel="stylesheet" href="./fullpage.min.css">
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .chair{
+            height: 60%;
+            position: absolute;
+            top: 70%;
+            left: 70%;
+            transform: translate(-70%, -70%);
+        }
+
+        .s1{
+            background-image: url('./img/couch.jpg');
+            background-size: cover;
+        }
+
+        .section h1{
+            font-size: 63px;
+            position: absolute;
+            left: 50%;
+            top: 20%;
+            transform: translate(-50%, -20%);
+
+            background: linear-gradient(to left, #87c7df, #648896);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            /* color: transparent; */
+        }
+
+        .s2{
+            background: linear-gradient(to left, #cbcbcb, white);
+
+        }
+        .s2 h1{
+            font-size: 48px;
+            background: linear-gradient(to left, #303030, #414141);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .description{
+            font-size: 20px;
+            margin: 20%;
+            margin-left: 5%;
+            width: 50%;
+        }
+        .description p{
+            margin: 50px 0;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="fullpage">
+        <section class="section s1">
+            <h1>Home Decoration</h1>
+        </section>
+        <section class="section s2">
+            <h1>Different Styles</h1>
+            <div class="description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt provident neque aliquid saepe dignissimos qui accusantium eum commodi sit delectus?</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, exercitationem?
+                </p>
+            </div>
+            <img src="./img/chair2.png" alt="chair" class="chair c1">
+            <img src="./img/chair3.png" alt="chair" class="chair c2">
+            <img src="./img/chair1.png" alt="chair" class="chair c3">
+        </section>
+        <section class="section s3">
+            <h1>Other</h1>
+        </section>
+    </div>
+
+
+
+
+
+    <script defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+        integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+    </script>
+
+    <script src="./fullpage.min.js" ></script>
+
+    <script type="module">
+        new fullpage('#fullpage', {
+            autoScrolling: true,
+            navigation: true,
+            onLeave: (origin, destination, direction)=>{
+                const section = destination.item;
+                const title = section.querySelector('h1')
+
+                const tl = gsap.timeline({delay: .5});
+
+                tl.fromTo(title, .5, {y: 50, opacity: 0}, { y: 0, opacity: 1})
+
+                if(destination.index === 1) {
+                    const chairs = section.querySelectorAll('.chair')
+                    const description = section.querySelector('.description')
+
+                    tl.fromTo(chairs, .7, {x: '100%'}, { x: '-50%'})
+                    .fromTo(description, .5, {y: 50, opacity: 0}, { y: 0, opacity: 1})
+                    .fromTo(chairs[0], 1, {opacity: 1}, {opacity: 1})
+                    .fromTo(chairs[1], 1, {opacity: 0}, {opacity: 1})
+                    .fromTo(chairs[2], 1, {opacity: 0}, {opacity: 1})
+                }
+            }
+        })
+
+
+    </script>
+
+</body>
+</html>
