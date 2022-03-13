@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body .card-container{
+            width: 600px;
+            display: flex;
+            flex-direction: column ;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .card{
+            background-color: white;
+            border: 1px solid #000;
+            border-radius: .25rem;
+            padding: .15rem;
+            opacity: 0;
+            transform: translateX(100px);
+            transition: 150ms;
+        }
+
+        .card.show{
+            transform: translateX(0px);
+            opacity: 1;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">This is first div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is a div</div>
+        <div class="card">This is last div</div>
+    </div>
+
+
+
+    <!--
+    <script>
+
+        const cards = document.querySelectorAll('.card')
+
+
+
+        // const observer = new IntersectionObserver(entries => {
+        //     entries.forEach(entry=> {
+        //         entry.target.classList.toggle( 'show', entry.isIntersecting )
+        //     })
+        // },{
+        //     threshold: .5,
+        // }
+        // )
+        
+
+        // const observer = new IntersectionObserver(entries => {
+        //     entries.forEach(entry=> {
+        //         entry.target.classList.toggle( 'show', entry.isIntersecting )
+
+        //         if(entry.isIntersecting) observer.unobserve(entry.target)
+        //     })
+        // },{
+        //     threshold: .5,
+        // }
+        // )
+        
+
+        // const observer = new IntersectionObserver(entries => {
+        //     entries.forEach(entry=> {
+        //         entry.target.classList.toggle( 'show', entry.isIntersecting )
+        //     })
+        // },{
+        //     rootMargin: '-80px'
+        // }
+        // )
+            
+
+
+        cards.forEach(card => {
+            observer.observe(card)
+        })
+    </script>
+    -->
+
+
+
+    <script>
+
+        const cardContainer = document.querySelector('.card-container')
+        const cards = document.querySelectorAll('.card')
+
+
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach( entry => {
+                entry.target.classList.toggle('show', entry.isIntersecting)
+            })
+            } , {
+                    threshold: 1,
+                }
+        )
+        cards.forEach(c => {
+            observer.observe(c)
+        })
+
+
+        const lastCardObserver = new IntersectionObserver( (entries) => {
+            const lastCard = entries[0]
+            console.log(lastCard)
+            if(!lastCard.isIntersecting) return
+            loadNewCards()
+            lastCardObserver.unobserve(lastCard.target)
+            lastCardObserver.observe(document.querySelector('.card:last-child'))
+        },{})
+
+
+        lastCardObserver.observe(document.querySelector('.card:last-child'))
+
+
+
+        function loadNewCards() {
+            for (let i = 0; i < 10; i++) {
+                const card = document.createElement('div')
+                card.textContent = ' New card'
+                card.classList.add('card')
+                observer.observe(card)
+                cardContainer.appendChild(card)
+            }
+        }
+
+    </script>
+</body>
+</html>
