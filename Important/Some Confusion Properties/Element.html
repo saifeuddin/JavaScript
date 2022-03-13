@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title> Element Properties </title>
+
+
+    <style>
+        h1,
+        h2 {
+            text-align: center;
+            background-color: blueviolet;
+            padding: 10px;
+            color: rgb(70, 51, 51);
+        }
+
+        div {
+            border: 1px solid #000;
+            margin: 30px;
+        }
+
+        ul li {
+            list-style: none;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #000;
+        }
+
+        ul li b:first-child {
+            font-size: 35px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1> Element Properties </h1>
+
+    <div>
+        <h2> Related With Height & Width </h2>
+        <ul>
+            <li>
+                <b>
+                    offsetHeight
+                </b>
+                <br>
+                <span>
+                    Returns the
+                    <b>
+                        <mark>
+                            viewable height
+                        </mark>
+                    </b>
+                    of an element,
+                    <mark>
+                        <b>
+                            including padding, border and scrollbar
+                        </b>
+                    </mark>
+                    <b>
+                        not
+                        <mark>
+                            margin.
+                        </mark>
+                    </b>
+                </span>
+            </li>
+            <li>
+                <b>
+                    offsetWidth
+                </b>
+                <br>
+                <span>
+                    Returns the
+                    <b>
+                        <mark>
+                            viewable width
+                        </mark>
+                    </b>
+                    of an element,
+                    <mark>
+                        <b>
+                            including padding, border and scrollbar
+                        </b>
+                    </mark>
+                    <b>
+                        not
+                        <mark>
+                            margin.
+                        </mark>
+                    </b>
+                </span>
+            </li>
+
+            <br>
+            <br>
+
+            <li>
+                <b>
+                    scrollHeight
+                </b>
+                <br>
+                <span>
+                    Returns the
+                    <mark>
+                        <b>
+                            entire height of an element that is not viewable (because of overflow) in pixels, including padding ,
+                        </b>
+                    </mark>
+                    but
+                    <b>
+                        <mark>
+                            not
+                        </mark>
+                        the border, scrollbar or margin.
+                    </b>
+                </span>
+            </li>
+            <li>
+                <b>
+                    scrollWidth
+                </b>
+                <br>
+                <span>
+                    Returns the
+                    <mark>
+                        <b>
+                            entire width of an element that is not viewable (because of overflow) in pixels, including padding ,
+                        </b>
+                    </mark>
+                    but
+                    <b>
+                        <mark>
+                            not
+                        </mark>
+                        the border, scrollbar or margin.
+                    </b>
+                </span>
+            </li>
+
+
+            <br>
+            <br>
+
+
+            <li>
+                <b>
+                    clientHeight
+                </b>
+                <br>
+                <span>
+                    The clientHeight property returns the
+                    <mark>
+                        <b>
+                            viewable height of an element in pixels, including padding
+                        </b>
+                    </mark>
+                    but
+                    <b>
+                        <mark>
+                            not
+                        </mark>
+                        the border, scrollbar or margin.
+                    </b>
+                </span>
+            </li>
+            <li>
+                <b>
+                    clientWidth
+                </b>
+                <br>
+                <span>
+                    The clientWidth property returns the
+                    <mark>
+                        <b>
+                            viewable width of an element in pixels, including padding
+                        </b>
+                    </mark>
+                    but
+                    <b>
+                        <mark>
+                            not
+                        </mark>
+                        the border, scrollbar or margin.
+                    </b>
+                </span>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div>
+        <h2>Related With Position</h2>
+        <ul>
+            <li>
+                <b>
+                    offsetParent :
+                </b>
+                <br>
+                <span>
+                    The offsetParent property returns
+                    <mark>
+                        <b>
+                            the nearest ancestor that has a position other than static.
+                        </b>
+                    </mark>
+                </span>
+            </li>
+            <li>
+                <b>
+                    offsetleft :
+                </b>
+                <br>
+                <span>
+                    The offsetLeft property returns the
+                    <mark>
+                        <b>
+                            left position (in pixels)
+                        </b>
+                    </mark>
+                    <b>
+                        relative to the left
+                    </b>
+                    side the offsetParent element.
+                </span>
+                <ol>
+                    <b>
+                        The returned value includes :
+                    </b>
+                    <li>
+                        the left position, and margin of the element
+                        offsetParent element
+                    </li>
+                    <li>
+                        the left padding, scrollbar and border of the offsetParent element
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <b>
+                    offsetTop :
+                </b>
+                <br>
+                <span>
+                    The offsetTop property returns the
+                    <mark>
+                        <b>
+                            top position (in pixels)
+                        </b>
+                    </mark>
+                    <b>
+                        relative to the top
+                    </b>
+                    of the offsetParent element.
+                </span>
+                <ol>
+                    <b>
+                        The returned value includes :
+                    </b>
+                    <li>
+                        the top position, and margin of the element
+                        offsetParent element
+                    </li>
+                    <li>
+                        the top padding, scrollbar and border of the offsetParent element
+                    </li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+
+
+    <div>
+        <h2> Related with Scroll </h2>
+        <ul>
+            <li>
+                <b>
+                    scrollLeft
+                </b>
+                <br>
+                <span>
+                    The scrollLeft property sets or returns the number of pixels an
+                    <mark>
+                        <b>
+                            element's content is scrolled
+                        </b>
+                    </mark>
+                    horizontally.
+                </span>
+            </li>
+            <li>
+                <b>
+                    scrollTop
+                </b>
+                <br>
+                <span>
+                    The scrollTop property sets or returns the number of pixels an
+                    <mark>
+                        <b>
+                            element's content is scrolled
+                        </b>
+                    </mark>
+                    vertically.
+                </span>
+            </li>
+        </ul>
+    </div>
+
+
+
+</body>
+</html>

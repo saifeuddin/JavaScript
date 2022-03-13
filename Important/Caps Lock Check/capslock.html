@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 70px 0;
+            border: 1px solid #000;
+        }
+        .caps-lock-warn{
+            font-weight: bold;
+            font-size: 14px;
+            color: red;
+            display: none;
+        }
+        input{
+            margin: 10px 0;
+        }
+        button{
+            display: block;
+            padding: 5px 15px;
+            color: white;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>Detech CapsLock with JavaScript</h1>
+        <form action="">
+            <label for="password"></label>
+            <input type="password" class="password" id="password" name="password">
+            <p class="caps-lock-warn">Caps Lock is On!</p>
+            <button type="submit"> Submit </button>
+
+        </form>
+    </div>
+
+
+
+
+
+    <script>
+        const input = document.querySelector('input')
+        const capsLockWarn = document.querySelector('p')
+        console.log(input, capsLockWarn)
+
+
+
+        input.addEventListener('keyup', e => {
+            if( e.getModifierState('CapsLock') ) {
+                capsLockWarn.style.display = 'block'
+            } else {
+                capsLockWarn.style.display = 'none'
+            }
+        })
+    </script>
+</body>
+</html>

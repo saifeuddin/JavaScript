@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title> Event Properties </title>
+
+
+    <style>
+        h1,
+        h2 {
+            text-align: center;
+            background-color: blueviolet;
+            padding: 10px;
+            color: rgb(70, 51, 51);
+        }
+
+        div {
+            border: 1px solid #000;
+            margin: 30px;
+        }
+
+        ul li {
+            list-style: none;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #000;
+        }
+
+        ul li b:first-child {
+            font-size: 35px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1> Mouse Event Properties </h1>
+
+    <div>
+        <h2> Related With Window & Mouse </h2>
+        <ul>
+            <li>
+                <b>
+                    clientX
+                </b>
+                <br>
+                <span>
+                    The clientX property returns the horizontal
+                    <mark>
+                        <b>
+                            coordinate (according to the client area)
+                        </b>
+                    </mark>
+                    of the mouse pointer when a mouse event was triggered.
+                    <br>
+                    <b>
+                        <mark>
+                            The client area is the current window.
+                        </mark>
+                    </b>
+                </span>
+            </li>
+            <li>
+                <b>
+                    clientY
+                </b>
+                <br>
+                <span>
+                    The clientY property returns the vetical
+                    <mark>
+                        <b>
+                            coordinate (according to the client area)
+                        </b>
+                    </mark>
+                    of the mouse pointer when a mouse event was triggered.
+                    <br>
+                    <b>
+                        <mark>
+                            The client area is the current window.
+                        </mark>
+                    </b>
+                </span>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <br>
+    <br>
+    <br>
+
+
+
+    <div>
+        <h2> Related With Document & Mouse </h2>
+        <ul>
+            <li>
+                <b>
+                    pageX
+                </b>
+                <br>
+                <span>
+                    Returns the horizontal coordinate
+                    <mark>
+                        <b>
+                            (according to the document)
+                        </b>
+                    </mark>
+                </span>
+                <br>
+                <b>
+                    <mark>
+                        The document is the web page.
+                    </mark>
+                </b>
+                <br>
+                <b>
+                    Note: This property is non-standard, but works in most major browsers.
+                </b>
+            </li>
+            
+            <li>
+                <b>
+                    pageY
+                </b>
+                <br>
+                <span>
+                    Returns the vertical coordinate
+                    <mark>
+                        <b>
+                            (according to the document)
+                        </b>
+                    </mark>
+                </span>
+                <br>
+                <b>
+                    <mark>
+                        The document is the web page.
+                    </mark>
+                </b>
+                <br>
+                <b>
+                    Note: This property is non-standard, but works in most major browsers.
+                </b>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <br>
+    <br>
+    <br>
+
+
+
+    <div>
+        <h2> Related With Element & Mouse </h2>
+        <ul>
+            <li>
+                <b>
+                    offsetX
+                </b>
+                <br>
+                <span>
+                    Returns the horizontal coordinate
+                    <mark>
+                        <b>
+                            relative to the position of the edge of the target element
+                        </b>
+                    </mark>
+                </span>
+            </li>
+            <li>
+                <b>
+                    offsetY
+                </b>
+                <br>
+                <span>
+                    Returns the vertical coordinate
+                    <mark>
+                        <b>
+                            relative to the position of the edge of the target element
+                        </b>
+                    </mark>
+                </span>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <br>
+    <br>
+    <br>
+
+
+    <div>
+        <h2> Related With Screen & Mouse </h2>
+        <ul>
+            <li>
+                <b>
+                    screenX
+                </b>
+                <br>
+                <span>
+                    Returns the horizontal coordinate
+                    <mark>
+                        <b>
+                            (according to the users computer screen)
+                        </b>
+                    </mark>
+                    of the mouse pointer when an event was triggered.
+                </span>
+            </li>
+            <li>
+                <b>
+                    screenY
+                </b>
+                <br>
+                <span>
+                    Returns the vertical coordinate
+                    <mark>
+                        <b>
+                            (according to the users computer screen)
+                        </b>
+                    </mark>
+                    of the mouse pointer when an event was triggered.
+                </span>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+</body>
+
+</html>
